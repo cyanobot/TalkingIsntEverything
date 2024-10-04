@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <InteractionDef>
+    <defName>CYB_EmptyInteraction</defName>
+    <label>nothing</label>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <workerClass>TalkingIsntEverything.InteractionWorker_Empty</workerClass>
+  </InteractionDef>
+
+
+</Defs>

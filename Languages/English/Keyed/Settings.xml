@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<CYB_SettingLabel_AllowAnimals>Allow Animals (Enables Tame and Train)</CYB_SettingLabel_AllowAnimals>
+<CYB_SettingDesc_AllowAnimals>Allows mute pawns to tame and train animals, including keeping them tame.</CYB_SettingDesc_AllowAnimals>
+
+<CYB_SettingLabel_AllowRomance>Allow Romance (Enables Romance Attempt, Marriage Proposal, Break Up)</CYB_SettingLabel_AllowRomance>
+<CYB_SettingDesc_AllowRomance>Allows mute pawns to initiate romance and propose to their lovers, rather than always having to wait for the other pawn to initiate.</CYB_SettingDesc_AllowRomance>
+
+<CYB_SettingLabel_AllowCasual>Allow Casual (Enables Chit-Chat, Deep Talk, Slight, Insult)</CYB_SettingLabel_AllowCasual>
+<CYB_SettingDesc_AllowCasual>Allows mute pawns to engage in standard socialisation like any other pawn, with new non-verbal log entries.</CYB_SettingDesc_AllowCasual>
+
+<CYB_SettingLabel_AllowSlavery>Allow Slavery (Enables Reduce Will, Enslave, Suppress)</CYB_SettingLabel_AllowSlavery>
+<CYB_SettingDesc_AllowSlavery>Allows mute pawns to take and keep slaves, with new non-verbal log entries.</CYB_SettingDesc_AllowSlavery>
+
+<CYB_SettingLabel_AllowComms>Allow Comms Console</CYB_SettingLabel_AllowComms>
+<CYB_SettingDesc_AllowComms>Allows mute pawns to use the comms console.</CYB_SettingDesc_AllowComms>
+
+<CYB_IdeologyRequired>Ideology required</CYB_IdeologyRequired>
+
+</LanguageData>

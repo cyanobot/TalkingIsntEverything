@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Chitchat_Recipient</defName>
+	<role>Recipient</role>
+	<original>Chitchat</original>
+	<replacement>CYB_Mute_Chitchat_Recipient</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_DeepTalk_Recipient</defName>
+	<role>Recipient</role>
+	<original>DeepTalk</original>
+	<replacement>CYB_Mute_DeepTalk_Recipient</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_AnimalChat</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>AnimalChat</original>
+	<replacement>CYB_Mute_AnimalChat</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_TameAttempt</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>TameAttempt</original>
+	<replacement>CYB_Mute_TameAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_TrainAttempt</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>TrainAttempt</original>
+	<replacement>CYB_Mute_TrainAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_ReleaseToWild</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>ReleaseToWild</original>
+	<replacement>CYB_Mute_ReleaseToWild</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_RomanceAttempt</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>RomanceAttempt</original>
+	<replacement>CYB_Mute_RomanceAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_MarriageProposal</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>MarriageProposal</original>
+	<replacement>CYB_Mute_MarriageProposal</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Breakup</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>Breakup</original>
+	<replacement>CYB_Mute_Breakup</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Chitchat_Initiator</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Chitchat</original>
+	<replacement>CYB_Mute_Chitchat_Initiator</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_DeepTalk_Initiator</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>DeepTalk</original>
+	<replacement>CYB_Mute_DeepTalk_Initiator</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Slight</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Slight</original>
+	<replacement>CYB_Mute_Slight</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Insult</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Insult</original>
+	<replacement>CYB_Mute_Insult</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_EnslaveAttempt</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>EnslaveAttempt</original>
+	<replacement>CYB_Mute_EnslaveAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_ReduceWill</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>ReduceWill</original>
+	<replacement>CYB_Mute_ReduceWill</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Suppress</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>Suppress</original>
+	<replacement>CYB_Mute_Suppress</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_BabyPlay</defName>
+	<role>Initiator</role>
+	<original>BabyPlay</original>
+	<replacement>CYB_Mute_BabyPlay</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>
