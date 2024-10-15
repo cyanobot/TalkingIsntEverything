@@ -13,7 +13,7 @@ using static TalkingIsntEverything.Util;
 namespace TalkingIsntEverything
 {
     [HarmonyPatch]
-    class WBR_HookupEligiblePair_Patch
+    public static class WBR_HookupEligiblePair_Patch
     {
         public static bool Prepare()
         {

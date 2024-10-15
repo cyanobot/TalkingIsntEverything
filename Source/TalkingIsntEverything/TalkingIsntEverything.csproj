@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Harmony\CreepJoiner_GetFloatMenuOptions_Patch.cs" />
     <Compile Include="Harmony\EmptyInteraction_Patch.cs" />
     <Compile Include="Harmony\CanInitiateInteraction_Patch.cs" />
     <Compile Include="Harmony\CommsConsole_Patch.cs" />
@@ -77,7 +78,7 @@
     <Compile Include="Harmony\WorkGiver_Warden_Enslave_Patch.cs" />
     <Compile Include="Harmony\WBR_JoyGiver_Date_Patch.cs" />
     <Compile Include="Harmony\WBR_HookupEligible_Patch.cs" />
-    <Compile Include="WBR_HookupEligiblePair_Patch.cs" />
+    <Compile Include="Harmony\WBR_HookupEligiblePair_Patch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
