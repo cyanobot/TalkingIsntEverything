@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Assemblies\TalkingIsntEverything.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Assemblies\TalkingIsntEverything.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Release\TalkingIsntEverything.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Release\TalkingIsntEverything.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Release\TalkingIsntEverything.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Release\TalkingIsntEverything.pdb

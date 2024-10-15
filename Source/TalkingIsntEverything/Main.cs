@@ -18,6 +18,8 @@ namespace TalkingIsntEverything
         public Main(ModContentPack mcp) : base(mcp)
         {
             GetSettings<Settings>();
+
+            Settings.wayBetterRomanceLoaded = LoadedModManager.RunningModsListForReading.Any(x => x.Name == "Way Better Romance");
         }
 
         public override string SettingsCategory()

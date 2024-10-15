@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -57,16 +57,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HarmonyPatching.cs" />
+    <Compile Include="Harmony\EmptyInteraction_Patch.cs" />
+    <Compile Include="Harmony\CanInitiateInteraction_Patch.cs" />
+    <Compile Include="Harmony\CommsConsole_Patch.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="IntDefOf.cs" />
     <Compile Include="InteractionRole.cs" />
-    <Compile Include="InteractionSwap.cs" />
+    <Compile Include="InteractionSwapDef.cs" />
     <Compile Include="InteractionWorker_Empty.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Harmony\PlayLogEntry_Interaction_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Harmony\ResetStaticDataPre_Patch.cs" />
+    <Compile Include="Harmony\RomanceEligible_Patch.cs" />
+    <Compile Include="Harmony\ScannerShouldSkip_Patch.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Harmony\TameUtility_ShowDesignationWarnings_Patch.cs" />
     <Compile Include="Util.cs" />
+    <Compile Include="Harmony\WorkGiver_Warden_Enslave_Patch.cs" />
+    <Compile Include="Harmony\WBR_JoyGiver_Date_Patch.cs" />
+    <Compile Include="Harmony\WBR_HookupEligible_Patch.cs" />
+    <Compile Include="WBR_HookupEligiblePair_Patch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

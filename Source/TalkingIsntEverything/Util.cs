@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
+using Verse.Grammar;
+using System.Diagnostics;
 
 namespace TalkingIsntEverything
 {
@@ -53,7 +55,7 @@ namespace TalkingIsntEverything
                 }
                 cachedAffectedInteractions[swap.original].Add(swap);
             }
-            //Log.Message("CalculateAffectedInterations - cachedAffectedInteractions: " + cachedAffectedInteractions.Keys.ToStringSafeEnumerable());
+            DebugLog("CalculateAffectedInterations - cachedAffectedInteractions: " + cachedAffectedInteractions.Keys.ToStringSafeEnumerable());
         }
 
         public static bool IsMute(Pawn pawn)
@@ -66,24 +68,14 @@ namespace TalkingIsntEverything
             return AffectedInteractions.ContainsKey(interaction);
         }
 
-        /*
-        public static bool InteractionAffected(InteractionDef interaction, InteractionRole role)
-        {
-            if (AffectedInteractions.ContainsKey(interaction))
-            {
-                return AffectedInteractions[interaction].Any(swap => swap.role == InteractionRole.Either || swap.role == role);
-            }
-            return false;
-        }
-        */
-
         public static InteractionDef ReplacementFor(InteractionDef def, Pawn pawn, bool isInitiator)
         {
-            //Log.Message("ReplacementFor - def: " + def + ", pawn: " + pawn);
+            DebugLog("ReplacementFor - def: " + def + ", pawn: " + pawn);
             if (!InteractionAffected(def)) return def;
             List<InteractionSwapDef> swaps = AffectedInteractions[def];
-            //Log.Message("swaps: " + swaps.ToStringSafeEnumerable());
+            DebugLog("swaps: " + swaps.ToStringSafeEnumerable());
             if (swaps.NullOrEmpty()) return def;
+            InteractionDef replacement = null;
             foreach (InteractionSwapDef swap in swaps)
             {
                 if (swap.role == InteractionRole.Either
@@ -91,11 +83,12 @@ namespace TalkingIsntEverything
                         ? swap.role == InteractionRole.Initiator
                         : swap.role == InteractionRole.Recipient))
                 {
-                    //Log.Message("Found replacement: " + swap.replacement);
-                    return swap.replacement;
+                    DebugLog("Found replacement: " + swap.replacement);
+                    replacement = swap.replacement;
                 }
             }
-            return def;
+            if (replacement == null) return def;
+            return replacement;
         }
 
         public static void SetTalkingFactor(StatDef stat, float weight)
@@ -103,5 +96,8 @@ namespace TalkingIsntEverything
             PawnCapacityFactor capacityFactor = stat.capacityFactors?.Find(f => f.capacity == PawnCapacityDefOf.Talking);
             capacityFactor.weight = weight;
         }
+
+        [Conditional("DEBUG")]
+        public static void DebugLog(string message) => Log.Message(message);
     }
 }

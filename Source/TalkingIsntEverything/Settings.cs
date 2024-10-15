@@ -13,6 +13,8 @@ namespace TalkingIsntEverything
 {
     public class Settings : ModSettings
     {
+        public static bool wayBetterRomanceLoaded = false;
+
         public static bool allowAnimals = true;
         public static bool allowRomance = true;
         public static bool allowCasual = false;

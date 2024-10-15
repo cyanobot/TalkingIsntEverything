@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- swaps -->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="divineDerivative.Romance">
+	<defName>CYB_TriedHookupWith</defName>
+	<role>Initiator</role>
+	<original>TriedHookupWith</original>
+	<replacement/>
+	<setting>allowRomance</setting>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="divineDerivative.Romance">
+	<defName>CYB_AskedForDate</defName>
+	<role>Initiator</role>
+	<original>AskedForDate</original>
+	<replacement/>
+	<setting>allowRomance</setting>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="divineDerivative.Romance">
+	<defName>CYB_AskedForHangout</defName>
+	<role>Initiator</role>
+	<original>AskedForHangout</original>
+	<replacement/>
+	<setting>allowCasual</setting>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<!-- pseudo-interactions 
+
+<InteractionDef>
+    <defName>CYB_Mute_TriedHookupWith</defName>
+    <label>hookup attempt</label>
+	<symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+</InteractionDef>
+
+<InteractionDef>
+    <defName>CYB_Mute_TriedHookupWith</defName>
+    <label>hookup attempt</label>
+	<symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+</InteractionDef>
+
+<InteractionDef>
+    <defName>CYB_Mute_TriedHookupWith</defName>
+    <label>hookup attempt</label>
+	<symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+</InteractionDef>
+-->
+
+</Defs>
