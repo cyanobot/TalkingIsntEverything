@@ -4,6 +4,7 @@ using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -15,11 +16,18 @@ namespace TalkingIsntEverything
 {
     public class Main : Mod
     {
+        public static Type t_LL_DebugToggles;
+        public static FieldInfo f_DisableSocialRequirements;
+
         public Main(ModContentPack mcp) : base(mcp)
         {
             GetSettings<Settings>();
 
             Settings.wayBetterRomanceLoaded = LoadedModManager.RunningModsListForReading.Any(x => x.Name == "Way Better Romance");
+            lifeLessonsLoaded = ModsConfig.IsActive("GhostData.lifelessons");
+
+            t_LL_DebugToggles = lifeLessonsLoaded ? AccessTools.TypeByName("LifeLessons.DebugToggles") : null;
+            f_DisableSocialRequirements = lifeLessonsLoaded ? AccessTools.Field(t_LL_DebugToggles, "DisableSocialRequirements") : null;
         }
 
         public override string SettingsCategory()

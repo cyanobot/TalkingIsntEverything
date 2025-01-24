@@ -6,6 +6,7 @@ using System.Reflection;
 namespace TalkingIsntEverything
 {
     //empty interaction does nothing but counts as having interacted
+    [HarmonyPriority(Priority.First)]
     [HarmonyPatch(typeof(Pawn_InteractionsTracker),nameof(Pawn_InteractionsTracker.TryInteractWith))]
     public static class EmptyInteraction_Patch
     {

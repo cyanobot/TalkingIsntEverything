@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- swaps -->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_ChatWithSpeechlessFailed</defName>
+	<role>Recipient</role>
+	<original>ChatWithSpeechlessFailed</original>
+	<replacement>CYB_Mute_ChatWithSpeechlessFailed</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_ChatFromSpeechlessFailed</defName>
+	<role>Recipient</role>
+	<original>ChatFromSpeechlessFailed</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_ChatWithSpeechlessSuccess</defName>
+	<role>Recipient</role>
+	<original>ChatWithSpeechlessSuccess</original>
+	<replacement>CYB_Mute_ChatWithSpeechlessSuccess</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_ChatFromSpeechlessSuccess</defName>
+	<role>Recipient</role>
+	<original>ChatFromSpeechlessSuccess</original>
+	<replacement>CYB_Mute_ChatFromSpeechlessSuccess</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_UnintelligibleChat</defName>
+	<role>Recipient</role>
+	<original>UnintelligibleChat</original>
+	<replacement>CYB_Mute_UnintelligibleChat</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="GhostData.lifelessons">
+	<defName>CYB_InsultFromSpeechless</defName>
+	<role>Recipient</role>
+	<original>InsultFromSpeechless</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<!-- pseudo-interactions -->
+
+<InteractionDef>
+    <defName>CYB_Mute_ChatWithSpeechlessFailed</defName>
+    <label>failed chat</label>
+	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] tried to [communicate] with [RECIPIENT_nameDef] but [failreason].</li>
+
+        <li>failreason->was met with silence</li>
+        <li>failreason->gave up</li>
+        <li>failreason->wasn't understood</li>
+
+        <li>communicate->chat</li>
+        <li>communicate->speak</li>
+        <li>communicate->gossip</li>
+        <li>communicate->communicate</li>
+      </rulesStrings>
+    </logRulesInitiator>
+</InteractionDef>
+
+<InteractionDef>
+    <defName>CYB_Mute_ChatWithSpeechlessSuccess</defName>
+    <label>chitchat</label>
+	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] taught a few words to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] had a one-sided but pleasant conversation with [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+</InteractionDef>
+
+<InteractionDef>
+    <defName>CYB_Mute_ChatFromSpeechlessSuccess</defName>
+    <label>chitchat</label>
+	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] gestured wildly and [communicated] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [communicated] to [RECIPIENT_nameDef], and they seem to have understood.</li>
+
+        <li>communicated->babbled</li>
+        <li>communicated->spoke garbled words</li>
+        <li>communicated->spoke strange broken words</li>
+      </rulesStrings>
+    </logRulesInitiator>
+</InteractionDef>
+
+<InteractionDef>
+    <defName>CYB_Mute_UnintelligibleChat</defName>
+    <label>chitchat?</label>
+	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] gestured wildly and [communicated] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [communicated] to [RECIPIENT_nameDef], and they seem to have understood.</li>
+
+        <li>communicated->babbled</li>
+        <li>communicated->spoke garbled words</li>
+        <li>communicated->spoke strange broken words</li>
+      </rulesStrings>
+    </logRulesInitiator>
+</InteractionDef>
+
+
+</Defs>
