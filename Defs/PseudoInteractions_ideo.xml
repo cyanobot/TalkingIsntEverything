@@ -200,8 +200,8 @@
 		<li>stallaction->having a tantrum</li>
 		<li>stallaction->launching into an elaborate and indecipherable pantomime</li>
 		
-		<li>pleadaction->fell to [RECIPIENT_possessive] knees</li>
-		<li>pleadaction->wrung [RECIPIENT_possessive] hands</li>
+		<li>pleadaction->fell to [INITIATOR_possessive] knees</li>
+		<li>pleadaction->wrung [INITIATOR_possessive] hands</li>
 		<li>pleadaction->appealed to the jury</li>
 		<li>pleadaction->gesticulated</li>
 		
