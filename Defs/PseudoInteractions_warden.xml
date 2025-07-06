@@ -7,7 +7,7 @@
  
   <!--recruitment-->
   
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef>
     <defName>CYB_Mute_BuildRapport</defName>
     <label>try to get to know</label>
     <symbol>Things/Mote/SpeechSymbols/BuildRapport</symbol>
@@ -43,7 +43,7 @@
     </logRulesInitiator>
   </InteractionDef>
   
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef>
     <defName>CYB_Mute_RecruitAttempt</defName>
     <label>recruit attempt</label>
     <symbolSource>InitiatorFaction</symbolSource>

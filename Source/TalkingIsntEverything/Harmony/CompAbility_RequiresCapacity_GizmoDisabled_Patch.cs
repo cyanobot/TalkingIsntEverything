@@ -47,7 +47,7 @@ namespace TalkingIsntEverything
                     }
                 }
 
-                if (allowRoles)
+                if (allowTrial)
                 {
                     //trial from Ideology
                     if (ModsConfig.IdeologyActive && __instance.parent.def == IntDefOf.Trial)

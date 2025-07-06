@@ -73,11 +73,11 @@
 </TalkingIsntEverything.InteractionSwapDef>
 
 
-<!--role functions : not usually available to mute, unlock with allowRoles -->
+<!--trial leader ability : not usually available to mute, unlock with allowTrial -->
 
 <TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
 	<defName>CYB_Trial_Accuse</defName>
-	<setting>allowRoles</setting>
+	<setting>allowTrial</setting>
 	<role>Initiator</role>
 	<original>Trial_Accuse</original>
 	<replacement>CYB_Mute_Trial_Accuse</replacement>

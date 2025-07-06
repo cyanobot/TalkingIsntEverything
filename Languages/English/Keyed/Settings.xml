@@ -10,12 +10,29 @@
 <CYB_SettingLabel_AllowCasual>Allow Casual (Enables Chit-Chat, Deep Talk, Slight, Insult)</CYB_SettingLabel_AllowCasual>
 <CYB_SettingDesc_AllowCasual>Allows mute pawns to engage in standard socialisation like any other pawn, with new non-verbal log entries.</CYB_SettingDesc_AllowCasual>
 
-<CYB_SettingLabel_AllowSlavery>Allow Slavery (Enables Reduce Will, Enslave, Suppress)</CYB_SettingLabel_AllowSlavery>
-<CYB_SettingDesc_AllowSlavery>Allows mute pawns to take and keep slaves, with new non-verbal log entries.</CYB_SettingDesc_AllowSlavery>
-
 <CYB_SettingLabel_AllowComms>Allow Comms Console</CYB_SettingLabel_AllowComms>
 <CYB_SettingDesc_AllowComms>Allows mute pawns to use the comms console.</CYB_SettingDesc_AllowComms>
 
+<CYB_SettingLabel_AllowRecruit>Allow Recruiting (Enables Reduce Resistance, Recruit)</CYB_SettingLabel_AllowRecruit>
+<CYB_SettingDesc_AllowRecruit>Allows mute pawns to recruit prisoners, with new non-verbal log entries.</CYB_SettingDesc_AllowRecruit>
+
+<CYB_SettingLabel_AllowSlavery>Allow Slavery (Enables Reduce Will, Enslave, Suppress)</CYB_SettingLabel_AllowSlavery>
+<CYB_SettingDesc_AllowSlavery>Allows mute pawns to take and keep slaves, with new non-verbal log entries.</CYB_SettingDesc_AllowSlavery>
+
+<CYB_SettingLabel_AllowConvert>Allow Conversion (Enables Conversion Ritual, Convert ability, and prisoner conversion)</CYB_SettingLabel_AllowConvert>
+<CYB_SettingDesc_AllowConvert>Allows mute pawns to convert others to their ideoligion, with new non-verbal log entries.</CYB_SettingDesc_AllowConvert>
+
+<CYB_SettingLabel_AllowTrial>Allow Trial</CYB_SettingLabel_AllowTrial>
+<CYB_SettingDesc_AllowTrial>Allows mute pawns to use the leader ability Trial, with new non-verbal log entries.</CYB_SettingDesc_AllowTrial>
+
+<CYB_SettingLabel_AllowSpeech>Allow Speeches</CYB_SettingLabel_AllowSpeech>
+<CYB_SettingDesc_AllowSpeech>Allows mute pawns to give "speeches" at ideoligious rituals, with new non-verbal log entries, and/or give a throne speech.</CYB_SettingDesc_AllowSpeech>
+
+<CYB_SettingLabel_AllowTeach>Allow Teaching</CYB_SettingLabel_AllowTeach>
+<CYB_SettingDesc_AllowTeach>Allows mute pawns to teach children at the school desk, with new non-verbal log entries.</CYB_SettingDesc_AllowTeach>
+
+
 <CYB_IdeologyRequired>Ideology required</CYB_IdeologyRequired>
+<CYB_BiotechRequired>Biotech required</CYB_BiotechRequired>
 
 </LanguageData>

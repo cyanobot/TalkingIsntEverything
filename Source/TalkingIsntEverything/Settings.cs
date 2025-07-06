@@ -24,11 +24,11 @@ namespace TalkingIsntEverything
         public static bool allowAnimals = true;
         public static bool allowRomance = true;
         public static bool allowCasual = false;
-        public static bool allowSlavery = false;
+        public static bool allowSlavery = true;
         public static bool allowRecruit = false;
         public static bool allowComms = true;
         public static bool allowConvert = false;
-        public static bool allowRoles = false;
+        public static bool allowTrial = true;
         public static bool allowSpeech = false;
         public static bool allowTeach = true;
 
@@ -43,7 +43,7 @@ namespace TalkingIsntEverything
             Scribe_Values.Look(ref allowRecruit, "allowRecruit", allowRecruit, true);
             Scribe_Values.Look(ref allowComms, "allowComms", allowComms, true);
             Scribe_Values.Look(ref allowConvert, "allowConvert", allowConvert, true);
-            Scribe_Values.Look(ref allowRoles, "allowRoles", allowRoles, true);
+            Scribe_Values.Look(ref allowTrial, "allowTrial", allowTrial, true);
             Scribe_Values.Look(ref allowSpeech, "allowSpeech", allowSpeech, true);
             Scribe_Values.Look(ref allowTeach, "allowTeach", allowTeach, true);
         }
@@ -58,15 +58,15 @@ namespace TalkingIsntEverything
 
             SettingEntry(rect, ref curX, ref curY, ref allowCasual, "AllowCasual");
 
-            SettingEntry(rect, ref curX, ref curY, ref allowRecruit, "AllowRecruit");
-
             SettingEntry(rect, ref curX, ref curY, ref allowComms, "AllowComms");
+
+            SettingEntry(rect, ref curX, ref curY, ref allowRecruit, "AllowRecruit");
 
             SettingEntry(rect, ref curX, ref curY, ref allowSlavery, "AllowSlavery", () => ModsConfig.IdeologyActive, "CYB_IdeologyRequired");
 
             SettingEntry(rect, ref curX, ref curY, ref allowConvert, "AllowConvert", () => ModsConfig.IdeologyActive, "CYB_IdeologyRequired");
 
-            SettingEntry(rect, ref curX, ref curY, ref allowRoles, "AllowRoles", () => ModsConfig.IdeologyActive, "CYB_IdeologyRequired");
+            SettingEntry(rect, ref curX, ref curY, ref allowTrial, "AllowTrial", () => ModsConfig.IdeologyActive, "CYB_IdeologyRequired");
 
             SettingEntry(rect, ref curX, ref curY, ref allowSpeech, "AllowSpeech");
 
@@ -109,7 +109,7 @@ namespace TalkingIsntEverything
                 else if (swap.setting == "allowSlavery") swap.enabled = allowSlavery;
                 else if (swap.setting == "allowRecruit") swap.enabled = allowRecruit;
                 else if (swap.setting == "allowConvert") swap.enabled = allowConvert;
-                else if (swap.setting == "allowRoles") swap.enabled = allowRoles;
+                else if (swap.setting == "allowTrial") swap.enabled = allowTrial;
                 else if (swap.setting == "allowTeach") swap.enabled = allowTeach;
 
                 //Log.Message(swap + ".enabled: " + swap.enabled);
@@ -169,7 +169,7 @@ namespace TalkingIsntEverything
                     IntDefOf.ChildcarerTeach.requiredCapacities.AddDistinct(PawnCapacityDefOf.Talking);
                 }
             }
-            Log.Message("ChildcarerTeach required capacities: " + IntDefOf.ChildcarerTeach.requiredCapacities.ToStringSafeEnumerable());
+            //Log.Message("ChildcarerTeach required capacities: " + IntDefOf.ChildcarerTeach.requiredCapacities.ToStringSafeEnumerable());
 
             if (allowRomance && !allowCasual)
             {

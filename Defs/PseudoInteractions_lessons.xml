@@ -37,7 +37,7 @@
   
 -->  
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonInteractionTeachingVerbs</defName>
     <rulePack>
       <rulesStrings>
@@ -58,7 +58,7 @@
     </rulePack>
   </RulePackDef>
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonInteractionHowTo</defName>
     <rulePack>
       <include>
@@ -76,7 +76,7 @@
     </rulePack>
   </RulePackDef> 
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonInteractionTeachSubjectTo</defName>
     <rulePack>
       <include>
@@ -92,7 +92,7 @@
     </rulePack>
   </RulePackDef>
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonInteractionStudySubjectActionWith</defName>
     <rulePack>
       <include>
@@ -110,7 +110,7 @@
     </rulePack>
   </RulePackDef>
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonInteractionQuiz</defName>
     <rulePack>
       <include>
@@ -133,7 +133,7 @@
     </rulePack>
   </RulePackDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonShooting</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -165,7 +165,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonMelee</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -204,7 +204,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonConstruction</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -243,7 +243,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonMining</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -286,7 +286,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonCooking</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -324,7 +324,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonPlants</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -358,7 +358,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonAnimals</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -408,7 +408,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonCrafting</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -453,7 +453,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonArtistic</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -493,7 +493,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonMedicine</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -550,7 +550,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonSocial</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
@@ -579,7 +579,7 @@
     </logRulesInitiator>
   </InteractionDef>
 
-  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CYB_Mute_LessonIntellectual</defName>
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>

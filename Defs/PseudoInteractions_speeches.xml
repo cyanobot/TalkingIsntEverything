@@ -52,7 +52,7 @@
 		  <li>r_logentry(p=0.1)->[INITIATOR_nameDef] gesticulated wildly.</li>
 		  <li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
 		  <li>r_logentry->[INITIATOR_nameDef] [mimeadv] [mimed] [performance].</li>
-		  <li>r_logentry(p=0.4)->[INITIATOR_nameDef] [mimeadv] communicated [performance] through interpretive dance.</li>
+		  <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [mimeadv] communicated [performance] through interpretive dance.</li>
 		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture].</li>		  
 		  <li>r_logentry(p=0.5)->[INITIATOR_nameDef] made an [gestureadj_v] [gesture].</li>	
 		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture] toward [target].</li>	
@@ -322,7 +322,7 @@
 		<li>performance->use of a cane</li>
 		<li>performance->covering the eyes</li>
 		
-		<li>target->the eyes</li>
+		<li>target->the eyes of the subject</li>
 		<li>target->[INITIATOR_possessive] eyes</li>
       </rulesStrings>
     </logRulesInitiator>
@@ -380,8 +380,8 @@
 		<li>performance->the lifecycle of the tree</li>
 		<li>performance->hugging a tree</li>
 		<li>performance->the cycle of the seasons</li>
-		<li>performance->becoming one</li>	
-		<li>performance->becoming connected</li>		  
+		<li>performance->becoming one with the tree</li>	
+		<li>performance->a deep connection</li>		  
 		<li>performance->pruning the tree</li>		
 		<li>performance->the act of meditation</li>		
 		<li>performance->a psychic awakening</li>	
