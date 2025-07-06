@@ -160,7 +160,6 @@ namespace TalkingIsntEverything
 
             if (ModsConfig.BiotechActive)
             {
-
                 if (allowTeach)
                 {
                     IntDefOf.ChildcarerTeach.requiredCapacities.Remove(PawnCapacityDefOf.Talking);
@@ -170,6 +169,7 @@ namespace TalkingIsntEverything
                     IntDefOf.ChildcarerTeach.requiredCapacities.AddDistinct(PawnCapacityDefOf.Talking);
                 }
             }
+            Log.Message("ChildcarerTeach required capacities: " + IntDefOf.ChildcarerTeach.requiredCapacities.ToStringSafeEnumerable());
 
             if (allowRomance && !allowCasual)
             {

@@ -128,8 +128,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonShooting</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -161,8 +160,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonMelee</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -201,8 +199,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonConstruction</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -237,8 +234,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonMining</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -277,8 +273,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonCooking</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -317,8 +312,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonPlants</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -353,8 +347,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonAnimals</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -401,8 +394,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonCrafting</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -443,8 +435,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonArtistic</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -480,8 +471,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonMedicine</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -534,8 +524,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonSocial</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
@@ -559,8 +548,7 @@
 
   <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>CYB_Mute_LessonIntellectual</defName>
-    <label></label>
-    <symbol></symbol>
+    <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>

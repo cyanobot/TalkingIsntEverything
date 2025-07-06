@@ -15,11 +15,11 @@ namespace TalkingIsntEverything
         public static bool Prefix(ref bool __result, Pawn pawn, InteractionDef interactionDef)
         {
             //if (interactionDef == InteractionDefOf.ReduceWill || interactionDef == InteractionDefOf.EnslaveAttempt)
-            if (interactionDef != null && pawn.RaceProps.Humanlike) DebugLog("CanInitiateInteraction Prefix - pawn: " + pawn + ", def: " + interactionDef);
+            //if (interactionDef != null && pawn.RaceProps.Humanlike) DebugLog("CanInitiateInteraction Prefix - pawn: " + pawn + ", def: " + interactionDef);
             //don't mess with non-mute pawns or interactions that aren't modified
             if (pawn == null || !IsMute(pawn) || !pawn.RaceProps.Humanlike || (interactionDef != null && interactionDef != IntDefOf.CYB_EmptyInteraction && !AffectedInteractions.ContainsKey(interactionDef))) return true;
 
-            if (interactionDef != null) DebugLog("reached vanilla checks");
+            //if (interactionDef != null) DebugLog("reached vanilla checks");
             //do the same other checks as vanilla - if failed pass back to vanilla in case anyone else is patching the same thing
             if (pawn.interactions == null) return true;
             if (!pawn.Awake()) return true;
@@ -40,12 +40,12 @@ namespace TalkingIsntEverything
                 return false;
             }
 
-            DebugLog("passed vanilla checks, affectedinteractions[interactionDef]: " + AffectedInteractions[interactionDef].ToStringSafeEnumerable());
+            //DebugLog("passed vanilla checks, affectedinteractions[interactionDef]: " + AffectedInteractions[interactionDef].ToStringSafeEnumerable());
             List<InteractionSwapDef> swaps = AffectedInteractions[interactionDef];
             if (swaps.NullOrEmpty()) return true;                                       //if found no swaps, return to vanilla
             if (swaps.Any(s => s.role == InteractionRole.Either || s.role == InteractionRole.Initiator))
             {
-                DebugLog("found swap");
+                //DebugLog("found swap");
                 __result = true;
                 return false;
             }

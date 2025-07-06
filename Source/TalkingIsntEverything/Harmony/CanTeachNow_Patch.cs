@@ -6,6 +6,7 @@ using RimWorld;
 using System.Reflection;
 using System.Reflection.Emit;
 using static TalkingIsntEverything.Settings;
+using Verse.AI;
 
 namespace TalkingIsntEverything
 {
@@ -16,12 +17,15 @@ namespace TalkingIsntEverything
         static FieldInfo f_Talking = AccessTools.Field(typeof(PawnCapacityDefOf), nameof(PawnCapacityDefOf.Talking));
         static MethodInfo m_CanTeach = AccessTools.Method(typeof(CanTeachNow_Patch), nameof(CanTeachNow_Patch.CanTeach));
 
+        static FieldInfo f_Pawn = AccessTools.Field(typeof(PawnCapacitiesHandler), "pawn");
+
         //parameters are to preserve stack order compared to the CapableOf method we're replacing
         //first parameter is the instance that would be loaded to call the non-static CapableOf
         //second parameter is the capacity parameter taken by CapableOf
         public static bool CanTeach(PawnCapacitiesHandler handler, PawnCapacityDef capacity)
         {
-            Log.Message($"CanTeachNow - handler: {handler}, capacity: {capacity}");
+            Log.Message($"CanTeachNow - pawn: {f_Pawn.GetValue(handler)}, capacity: {capacity}" +
+                $", allowTeach: {allowTeach}");
             return allowTeach || handler.CapableOf(capacity);
         }
 
@@ -60,4 +64,55 @@ namespace TalkingIsntEverything
             }
         }
     }
+    
+    /*
+    [HarmonyPatch(typeof(WorkGiver_Teach), nameof(WorkGiver_Teach.ShouldSkip))]
+    public static class Test_WorkGiver_Teach_ShouldSkip_Patch
+    {
+        public static void Postfix(Pawn pawn, bool __result)
+        {
+            Log.Message($"WorkGiver_Teach.ShouldSkip - pawn: {pawn}, result: {__result}");
+        }
+    }
+
+
+    [HarmonyPatch(typeof(WorkGiver_Teach), nameof(WorkGiver_Teach.HasJobOnThing))]
+    public static class Test_WorkGiver_Teach_HasJobOnThing_Patch
+    {
+        public static void Postfix(Pawn pawn, Thing t, bool __result)
+        {
+            Log.Message($"WorkGiver_Teach.HasJobOnThing - pawn: {pawn}, thing: {t}, result: {__result}");
+        }
+    }
+
+
+    [HarmonyPatch(typeof(WorkGiver_Teach), nameof(WorkGiver_Teach.JobOnThing))]
+    public static class Test_WorkGiver_Teach_JobOnThing_Patch
+    {
+        public static void Postfix(Pawn pawn, Thing t, Job __result)
+        {
+            Log.Message($"WorkGiver_Teach.JobOnThing - pawn: {pawn}, thing: {t}, result: {__result}");
+        }
+    }
+
+
+    [HarmonyPatch(typeof(SchoolUtility), nameof(SchoolUtility.FindTeacher))]
+    public static class Test_SchoolUtility_FindTeacher_Patch
+    {
+        public static void Postfix(Pawn child, Pawn __result)
+        {
+            Log.Message($"SchoolUtility.FindTeacher - pawn: {child}, result: {__result}");
+        }
+    }
+
+
+    [HarmonyPatch(typeof(LearningGiver_Lessontaking), nameof(LearningGiver_Lessontaking.CanDo))]
+    public static class Test_LearningGiver_Lessontaking_CanDo_Patch
+    {
+        public static void Postfix(Pawn pawn, bool __result)
+        {
+            Log.Message($"LearningGiver_Lessontaking.CanDo - pawn: {pawn}, result: {__result}");
+        }
+    }
+    */
 }
