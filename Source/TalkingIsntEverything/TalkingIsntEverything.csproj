@@ -65,6 +65,8 @@
     <Compile Include="Harmony\CommsConsole_Patch.cs" />
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_Patch.cs" />
     <Compile Include="Harmony\LifeLessons_TryInteractWith_Patches.cs" />
+    <Compile Include="Harmony\PlayLogEntry_InteractionSinglePawn_Patch.cs" />
+    <Compile Include="Harmony\PlayLogEntry_InteractionWithMany_Patch.cs" />
     <Compile Include="Harmony\WorkGiver_Warden_Chat_Patch.cs" />
     <Compile Include="Harmony\WorkGiver_Warden_Convert_Patch.cs" />
     <Compile Include="Init.cs" />
