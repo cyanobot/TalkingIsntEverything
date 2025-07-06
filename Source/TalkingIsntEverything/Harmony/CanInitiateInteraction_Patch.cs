@@ -53,10 +53,12 @@ namespace TalkingIsntEverything
             return true;
         }
 
+        /*
         public static void Postfix(bool __result, Pawn pawn, InteractionDef interactionDef)
         {
             if (interactionDef != null && pawn.RaceProps.Humanlike) DebugLog("CanInitiateInteraction Postfix - pawn: " + pawn + ", interactionDef: " + interactionDef + ", result: " + __result);
         }
+        */
     }
 
 }

@@ -34,5 +34,8 @@ namespace TalkingIsntEverything
 
         [MayRequireIdeology]
         public static WorkGiverDef ConvertPrisoner;
+
+        [MayRequireBiotech]
+        public static WorkGiverDef ChildcarerTeach;
     }
 }

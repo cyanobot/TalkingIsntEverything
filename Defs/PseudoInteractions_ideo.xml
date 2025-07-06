@@ -20,9 +20,47 @@
 		<li>mimeadv->confidently</li>
 		<li>mimeadv->sternly</li>
 		
-		<li>performance->togetherness</li>
-		<li>performance->ritual behaviour</li>
-		<li>performance->community</li>
+		<li>correct->correct</li>
+		<li>correct->proper</li>
+		<li>correct->appropriate</li>
+		<li>correct->traditional</li>
+		<li>correct->preferable</li>
+		<li>correct->community's preferred</li>
+		
+		<li>action->eat</li>
+		<li>action->begin a meal</li>
+		<li>action->greet a [person]</li>
+		<li>action->party</li>
+		<li>action->act formally</li>
+		<li>action->way to behave</li>
+		
+		<li>person->friend</li>
+		<li>person->stranger</li>
+		<li>person->relative</li>
+		<li>person->slave</li>
+		<li>person->colony animal</li>
+		<li>person->VIP</li>
+		
+		<li>object->food rituals</li>
+		<li>object->behaviour</li>
+		<li>object->societal roles</li>
+		<li>object->relationships</li>
+		
+		<li>object_formsof->greeting</li>
+		<li>object_formsof->recreation</li>
+		<li>object_formsof->ritual</li>
+		<li>object_formsof->apology</li>
+		<li>object_formsof->penitence</li>
+		
+		<li>concept->togetherness</li>
+		<li>concept->ritual</li>
+		<li>concept->community</li>
+		<li>concept->personal growth</li>
+		
+		<li>performance->the [correct] way to [action]</li>
+		<li>performance->[correct] [object]</li>
+		<li>performance->[correct] formsof [object_formsof]</li>
+		<li>performance->the concept of [concept]</li>
 		<li>performance->taking up a burden</li>
 		<li>performance->personal growth</li>
 		<li>performance->societal roles</li>
@@ -30,7 +68,6 @@
 		<li>performance->self discovery</li>
 		<li>performance->penitence</li>
 		<li>performance->the community's traditions</li>
-		<li>performance->a traditional practice</li>
 		
 		<li>gestureadj->traditional</li>
 		<li>gestureadj->grandiose</li>

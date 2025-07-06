@@ -158,6 +158,19 @@ namespace TalkingIsntEverything
                 }
             }
 
+            if (ModsConfig.BiotechActive)
+            {
+
+                if (allowTeach)
+                {
+                    IntDefOf.ChildcarerTeach.requiredCapacities.Remove(PawnCapacityDefOf.Talking);
+                }
+                else
+                {
+                    IntDefOf.ChildcarerTeach.requiredCapacities.AddDistinct(PawnCapacityDefOf.Talking);
+                }
+            }
+
             if (allowRomance && !allowCasual)
             {
                 baseEmptySelectionWeight = 1f;
