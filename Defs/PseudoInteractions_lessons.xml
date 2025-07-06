@@ -41,12 +41,19 @@
     <defName>CYB_Mute_LessonInteractionTeachingVerbs</defName>
     <rulePack>
       <rulesStrings>
-        <li>teach_verb->demonstrated</li>
         <li>teach_verb->showed</li>
         <li>teach_verb->taught</li>
-        <li>teach_verb->mimed</li>
-        <li>teach_verb->pantomimed</li>
-        <li>teach_verb->drew a diagram of</li>
+		
+		<li>mime_verb->demonstrated</li>
+		<li>mime_verb->mimed</li>
+		<li>mime_verb->pantomimed</li>
+		
+		<li>extended_verb->drew a diagram of</li>
+		<li>extended_verb->gave a short demonstration of</li>
+		<li>extended_verb->illustrated</li>
+        <li>extended_verb->drew a complicated diagram of</li>
+        <li>extended_verb->drew a number of diagrams about</li>
+        <li>extended_verb->demonstrated the basics of</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -59,8 +66,12 @@
         <li>CYB_Mute_LessonInteractionTeachingVerbs</li>
       </include>
       <rulesStrings>
-        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_adverb] [teach_verb] how to [action] [article_tool] to [RECIPIENT_nameDef].</li>
-        <li>r_logentry->[INITIATOR_nameDef] [teach_verb] how to [action] [article_tool] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_adverb] [teach_verb] [RECIPIENT_nameDef] how to [action] [article_tool].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [teach_verb] [RECIPIENT_nameDef] how to [action] [article_tool].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_adverb] [mime_verb] to [RECIPIENT_nameDef] how to [action] [article_tool].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [mime_verb] to [RECIPIENT_nameDef] how to [action] [article_tool].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [teach_adverb] [extended_verb] how to [action] [article_tool].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [extended_verb] how to [action] [article_tool].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef> 
@@ -70,30 +81,26 @@
     <rulePack>
       <include>
         <li>LessonInteractionTeachingAdverbs</li>
+        <li>CYB_Mute_LessonInteractionTeachingVerbs</li>
       </include>
       <rulesStrings>
-        <li>r_logentry(p=0.25)->[INITIATOR_nameDef] [teach_adverb] [talk_verb] [subject] to [RECIPIENT_nameDef].</li>
-        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [talk_verb] [subject] to [RECIPIENT_nameDef].</li>
-
-        <li>talk_verb->drew a diagram of</li>
-        <li>talk_verb->drew a complicated diagram of</li>
-        <li>talk_verb->drew a number of diagrams about</li>
-        <li>talk_verb->demonstrated the basics of</li>
-        <li>talk_verb->demonstrated</li>
-        <li>talk_verb->pantomimed</li>
+        <li>r_logentry(p=0.25)->[INITIATOR_nameDef] [teach_adverb] [extended_verb] [subject] for [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [extended_verb] [subject] for [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.25)->[INITIATOR_nameDef] [teach_adverb] [extended_verb] [subject].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [extended_verb] [subject].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
   <RulePackDef>
-    <defName>CYB_Mute_LessonInteractionStudySubjectWith</defName>
+    <defName>CYB_Mute_LessonInteractionStudySubjectActionWith</defName>
     <rulePack>
       <include>
         <li>LessonInteractionTeachingAdverbs</li>
       </include>
       <rulesStrings>
-        <li>r_logentry(p=0.25)->[INITIATOR_nameDef] [teach_adverb] [study_verb] [subject] with [RECIPIENT_nameDef].</li>
-        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [study_verb] [subject] with [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.25)->[INITIATOR_nameDef] [teach_adverb] [study_verb] [subject_action] with [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.5)->[INITIATOR_nameDef] [study_verb] [subject_action] with [RECIPIENT_nameDef].</li>
 
         <li>study_verb->praticed</li>
         <li>study_verb->explored</li>
@@ -204,7 +211,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -228,6 +235,10 @@
         <li>subject->building materials</li>
         <li>subject->modeling software</li>
         <li>subject->blueprints</li>
+		
+		<li>subject_action->construction techniques</li>
+		<li>subject_action->deconstruction techniques</li>
+        <li>subject_action->modeling software</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -239,7 +250,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -265,6 +276,10 @@
         <li>subject->tunneling</li>
         <li>subject->sediment analysis</li>
         <li>subject->cave-dwelling insects</li>
+		
+        <li>subject_action->geology</li>
+        <li>subject_action->tunneling</li>
+        <li>subject_action->sediment analysis</li>
 
         <li>situation(p=2)->underground</li>
       </rulesStrings>
@@ -278,7 +293,6 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -301,7 +315,7 @@
         <li>subject->varieties of meats</li>
         <li>subject->flavors</li>
         <li>subject->recipes</li>
-
+		
         <li>situation->while caravaning</li>
         <li>situation->blindfolded</li>
         <li>situation->in a hurry</li>
@@ -317,7 +331,6 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -352,7 +365,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -388,6 +401,9 @@
         <li>subject->reptiles</li>
         <li>subject->scaria</li>
         <li>subject->kibble</li>
+		
+		<li>subject_action->taming techniques</li>
+		<li>subject_action->training techniques</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -399,7 +415,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -426,6 +442,10 @@
         <li>subject->plate armor</li>
         <li>subject->utility belts</li>
         <li>subject->bionics</li>
+		
+		<li>subject_action->organizing tools</li>
+		<li>subject_action->tinkering</li>
+		<li>subject_action->cloth weaving techniques</li>
 
         <li>situation->without instructions</li>
         <li>situation->by candlelight</li>
@@ -440,7 +460,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -465,6 +485,10 @@
         <li>subject->portraiture</li>
         <li>subject->abstract art</li>
         <li>subject->mixing paints</li>
+		
+		<li>subject_action->portraiture</li>
+		<li>subject_action->abstract art</li>
+		<li>subject_action->mixing paints</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -476,7 +500,7 @@
       <include>
         <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
         <li>CYB_Mute_LessonInteractionQuiz</li>
       </include>
       <rulesStrings>
@@ -518,6 +542,10 @@
         <li>subject->surgical procedures</li>
         <li>subject->bedside manner</li>
         <li>subject->sterilization methods</li>
+		
+		<li>subject_action->bedside manner</li>
+		<li>subject_action->anesthesia dosing</li>
+		<li>subject_action->sterilization methods</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -527,10 +555,8 @@
     <symbol>Things/Mote/Childcare/Teaching</symbol>
     <logRulesInitiator>
       <include>
-        <li>CYB_Mute_LessonInteractionHowTo</li>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
-        <li>CYB_Mute_LessonInteractionQuiz</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
       </include>
       <rulesStrings>
         <li>subject->public pantomime</li>
@@ -542,6 +568,13 @@
         <li>subject->boosting morale</li>
         <li>subject->obscene gestures</li>
         <li>subject->sign language</li>
+		
+        <li>subject_action->public pantomime</li>
+        <li>subject_action->haggling techniques</li>
+        <li>subject_action->comms console etiquette</li>
+        <li>subject_action->boosting morale</li>
+        <li>subject_action->obscene gestures</li>
+        <li>subject_action->sign language</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -552,7 +585,7 @@
     <logRulesInitiator>
       <include>
         <li>CYB_Mute_LessonInteractionTeachSubjectTo</li>
-        <li>CYB_Mute_LessonInteractionStudySubjectWith</li>
+        <li>CYB_Mute_LessonInteractionStudySubjectActionWith</li>
       </include>
       <rulesStrings>
         <li>subject->genetics</li>
@@ -567,6 +600,13 @@
         <li>subject->the scientific method</li>
         <li>subject->seminal whitepapers</li>
         <li>subject->Johnson-Tanaka propulsion</li>
+		
+        <li>subject_action->genetics</li>
+        <li>subject_action->philosophy</li>
+        <li>subject_action->mathematics</li>
+        <li>subject_action->biology</li>
+        <li>subject_action->chemistry</li>
+        <li>subject_action->the scientific method</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>

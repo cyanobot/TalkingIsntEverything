@@ -13,17 +13,17 @@
           <li>mimed->pantomimed</li>
           <li>mimed->acted out</li>
           <li>mimed->demonstrated</li>
-          <li>mimed->portrayed through gesture</li>
 		  
 		  <li>mimeadv->ritualistically</li>
 		  <li>mimeadv->subtly</li>
 		  <li>mimeadv->briefly</li>
 		  <li>mimeadv->dramatically</li>
-		  <li>mimeadv->energetically</li>
 		  <li>mimeadv->carefully</li>
 		  <li>mimeadv->abstractly</li>
+	      <li>mimeadv->solemnly</li>
+		  <li>mimeadv->confidently</li>
 		  
-		  <li>performance->something indecipherable</li>
+		  <li>performance(p=0.1)->something indecipherable</li>
 		  
 		  <li>gestureadj->sweeping</li>
 		  <li>gestureadj->dramatic</li>
@@ -31,9 +31,8 @@
 		  <li>gestureadj->sudden</li>
 		  <li>gestureadj->brief</li>
 		  
-		  <li>gestureadj_v->enigmatic</li>
-		  <li>gestureadj_v->ambiguous</li>
-		  <li>gestureadj_v->assertive</li>
+		  <li>gestureadj_v(p=0.3)->enigmatic</li>
+		  <li>gestureadj_v(p=0.5)->ambiguous</li>
 		  <li>gestureadj_v->elaborate</li>
 		  
 		  <li>gesture->gesture</li>
@@ -45,25 +44,21 @@
 		  <li>pointed->gesticulated</li>
 		  <li>pointed->directed attention</li>
 		  
-		  <li>toward->toward</li>
-		  <li>toward->at</li>
-		  <li>toward->to</li>
-		  
 		  <li>target->[INITIATOR_reflexive]</li>
 		  <li>target->the audience</li>
 		  <li>target->the floor</li>
 		  <li>target->a seemingly random direction</li>
 		  
-		  <li>r_logentry->[INITIATOR_nameDef] gesticulated wildly.</li>
+		  <li>r_logentry(p=0.1)->[INITIATOR_nameDef] gesticulated wildly.</li>
 		  <li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
 		  <li>r_logentry->[INITIATOR_nameDef] [mimeadv] [mimed] [performance].</li>
-		  <li>r_logentry->[INITIATOR_nameDef] [mimeadv] communicated [performance] through interpretive dance.</li>
+		  <li>r_logentry(p=0.4)->[INITIATOR_nameDef] [mimeadv] communicated [performance] through interpretive dance.</li>
 		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture].</li>		  
-		  <li>r_logentry->[INITIATOR_nameDef] made an [gestureadj_v] [gesture].</li>	
-		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture] [toward] [target].</li>	
-		  <li>r_logentry->[INITIATOR_nameDef] made an [gestureadj_v] [gesture] [toward] [target].</li>	
-		  <li>r_logentry->[INITIATOR_nameDef] [pointed] [toward] [target].</li>		  
-		  <li>r_logentry->[INITIATOR_nameDef] [pointed] [mimeadv] [toward] [target].</li>  
+		  <li>r_logentry(p=0.5)->[INITIATOR_nameDef] made an [gestureadj_v] [gesture].</li>	
+		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture] toward [target].</li>	
+		  <li>r_logentry(p=0.5)->[INITIATOR_nameDef] made an [gestureadj_v] [gesture] toward [target].</li>	
+		  <li>r_logentry->[INITIATOR_nameDef] [pointed] toward [target].</li>		  
+		  <li>r_logentry->[INITIATOR_nameDef] [pointed] [mimeadv] toward [target].</li>  
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -78,7 +73,7 @@
 		<li>mimeadv->violently</li>
 		<li>mimeadv->abruptly</li>
 		<li>mimeadv->decisively</li>
-		<li>mimeadv->solemnly</li>
+		<li>mimeadv->energetically</li>
 		
 		<li>performance->the clash of blades</li>
 		<li>performance->a violent death</li>
@@ -98,6 +93,9 @@
 		<li>gestureadj->vicious</li>
 		<li>gestureadj->savage</li>
 		<li>gestureadj->fierce</li>
+		
+		<li>gestureadj_v->assertive</li>
+		<li>gestureadj_v->aggressive</li>
 		
 		<li>gesture->slashing motion</li>
 		<li>gesture->stabbing motion</li>
@@ -119,20 +117,19 @@
       <include><li>CYB_MuteSpeechUtility</li></include>
       <rulesStrings>
 		<li>mimeadv->mournfully</li>
-		<li>mimeadv->solemnly</li>
 		<li>mimeadv->with finality</li>
 		<li>mimeadv->sadly</li>
 		<li>mimeadv->grimly</li>
 		
 		<li>performance->eternal sleep</li>
-		<li>performance->ending</li>
+		<li>performance->an ending</li>
 		<li>performance->death</li>
 		<li>performance->the journey to the afterlife</li>
 		<li>performance->crossing over</li>
 		<li>performance->weeping</li>
-		<li>performance->grieving</li>
+		<li>performance->grief</li>
 		<li>performance->lamentation</li>
-		<li>performance->comforting one another</li>
+		<li>performance->the act of comforting one another</li>
 		<li>performance->celebration</li>
 		
 		<li>gestureadj->slow</li>
@@ -166,6 +163,7 @@
 		<li>gestureadj->warm</li>
 		
 		<li>gestureadj_v->inclusive</li>
+		<li>gestureadj_v->assertive</li>
 		
 		<li>target->the colony</li>
 		<li>target->the group</li>
@@ -183,10 +181,10 @@
       <rulesStrings>
 		<li>mimeadv->excitedly</li>
 		<li>mimeadv->authoritatively</li>
-		<li>mimeadv->confidently</li>
 		<li>mimeadv->sternly</li>
 		<li>mimeadv->enthusiastically</li>
 		<li>mimeadv->stoically</li>
+		<li>mimeadv->energetically</li>
 		
 		<li>performance->leadership</li>
 		<li>performance->taking the lead</li>
@@ -229,7 +227,6 @@
       <include><li>CYB_MuteSpeechUtility</li></include>
       <rulesStrings>
 		<li>mimeadv->maniacally</li>
-		<li>mimeadv->solemnly</li>
 		<li>mimeadv->repeatedly</li>
 		<li>mimeadv->wildly</li>
 		<li>mimeadv->reverently</li>
@@ -248,6 +245,7 @@
 		<li>gestureadj->vicious</li>
 		
 		<li>gestureadj_v->abrupt</li>
+		<li>gestureadj_v->aggressive</li>
 		
 		<li>gesture->slash</li>
 		<li>gesture->swipe</li>
@@ -270,8 +268,8 @@
       <rulesStrings>
 		<li>mimeadv->stoically</li>
 		<li>mimeadv->maniacally</li>
+		<li>mimeadv->energetically</li>
 		<li>mimeadv->savagely</li>
-		<li>mimeadv->solemnly</li>
 		<li>mimeadv->reverently</li>
 	  
 		<li>performance->the act of branding</li>
@@ -293,6 +291,7 @@
 		<li>gestureadj_v->incisive</li>
 		<li>gestureadj_v->elegant</li>
 		<li>gestureadj_v->abrupt</li>
+		<li>gestureadj_v->assertive</li>
 		
 		<li>target->the implement of scarification</li>
 		<li>target->the recipient</li>
@@ -338,7 +337,6 @@
       <rulesStrings>
 		<li>mimeadv->grimly</li>
 		<li>mimeadv->savagely</li>
-		<li>mimeadv->solemnly</li>
 		<li>mimeadv->sternly</li>
 		<li>mimeadv->disdainfully</li>
 		
@@ -358,6 +356,8 @@
 		<li>gestureadj->solemn</li>
 		
 		<li>gestureadj_v->abrupt</li>
+		<li>gestureadj_v->assertive</li>
+		<li>gestureadj_v->aggressive</li>
 		
 		<li>target->the condemned</li>
       </rulesStrings>
@@ -412,10 +412,10 @@
       <rulesStrings>
 		<li>mimeadv->excitedly</li>
 		<li>mimeadv->authoritatively</li>
-		<li>mimeadv->confidently</li>
 		<li>mimeadv->sternly</li>
 		<li>mimeadv->enthusiastically</li>
 		<li>mimeadv->stoically</li>
+		<li>mimeadv->energetically</li>
 	  
 		<li>performance->leading by example</li>
 		<li>performance->speaking with each colonist in turn</li>
@@ -438,10 +438,11 @@
 		
 		<li>gestureadj->decisive</li>
 		<li>gestureadj->thoughtful</li>
-		<li>gestureadj->assertive</li>
 		<li>gestureadj->traditional</li>
 		<li>gestureadj->ritually prescribed</li>
 		<li>gestureadj->grandiose</li>
+		
+		<li>gestureadj_v->assertive</li>
 		
 		<li>target->the colony</li>
 		<li>target->the group</li>
@@ -457,7 +458,6 @@
       <include><li>CYB_MuteSpeechUtility</li></include>
       <rulesStrings>
 		<li>mimeadv->reluctantly</li>
-		<li>mimeadv->solemnly</li>
 		<li>mimeadv->humbly</li>
 		
 		<li>performance->setting aside a mantle</li>

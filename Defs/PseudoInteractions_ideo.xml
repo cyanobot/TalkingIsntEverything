@@ -78,7 +78,7 @@
 		<li>gestureadj_v->inviting</li>
 		<li>gestureadj_v->assertive</li>
 	  
-		<li>target->the subject</li>
+		<li>target->the convertee</li>
       </rulesStrings>
     </logRulesInitiator>
   </InteractionDef>
@@ -182,6 +182,7 @@
 		<li>thoughtadj->carefully</li>
 		<li>thoughtadj->critically</li>
 		<li>thoughtadj->silently</li>
+		<li>thoughtadj->privately</li>
 		
 		<li>thoughtabout->thought about</li>
 		<li>thoughtabout->contemplated</li>
@@ -209,6 +210,7 @@
 		<li>r_logentry->[INITIATOR_nameDef] [thoughtabout] [thoughttopic].</li>
 		<li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
 		<li>r_logentry->[INITIATOR_nameDef] [gestured] [gestureadv] toward [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [gestured] to the jury.</li>
 		<li>r_logentry->[INITIATOR_nameDef] presented some evidence.</li>
       </rulesStrings>
     </logRulesInitiator>

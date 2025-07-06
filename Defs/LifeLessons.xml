@@ -47,7 +47,7 @@
 
 <!-- pseudo-interactions -->
 
-<InteractionDef>
+<InteractionDef MayRequire="GhostData.lifelessons">
     <defName>CYB_Mute_ChatWithSpeechlessFailed</defName>
     <label>failed chat</label>
 	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
@@ -67,7 +67,7 @@
     </logRulesInitiator>
 </InteractionDef>
 
-<InteractionDef>
+<InteractionDef MayRequire="GhostData.lifelessons">
     <defName>CYB_Mute_ChatWithSpeechlessSuccess</defName>
     <label>chitchat</label>
 	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
@@ -79,7 +79,7 @@
     </logRulesInitiator>
 </InteractionDef>
 
-<InteractionDef>
+<InteractionDef MayRequire="GhostData.lifelessons">
     <defName>CYB_Mute_ChatFromSpeechlessSuccess</defName>
     <label>chitchat</label>
 	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
@@ -95,7 +95,7 @@
     </logRulesInitiator>
 </InteractionDef>
 
-<InteractionDef>
+<InteractionDef MayRequire="GhostData.lifelessons">
     <defName>CYB_Mute_UnintelligibleChat</defName>
     <label>chitchat?</label>
 	<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
