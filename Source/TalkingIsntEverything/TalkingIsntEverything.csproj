@@ -57,11 +57,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Harmony\CanTeachNow_Patch.cs" />
+    <Compile Include="Harmony\CompAbility_RequiresCapacity_GizmoDisabled_Patch.cs" />
     <Compile Include="Harmony\CreepJoiner_GetFloatMenuOptions_Patch.cs" />
     <Compile Include="Harmony\EmptyInteraction_Patch.cs" />
     <Compile Include="Harmony\CanInitiateInteraction_Patch.cs" />
     <Compile Include="Harmony\CommsConsole_Patch.cs" />
+    <Compile Include="Harmony\JobDriver_ConvertPrisoner_Patch.cs" />
     <Compile Include="Harmony\LifeLessons_TryInteractWith_Patches.cs" />
+    <Compile Include="Harmony\WorkGiver_Warden_Chat_Patch.cs" />
+    <Compile Include="Harmony\WorkGiver_Warden_Convert_Patch.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="IntDefOf.cs" />
     <Compile Include="InteractionRole.cs" />

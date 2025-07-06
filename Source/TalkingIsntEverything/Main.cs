@@ -35,48 +35,6 @@ namespace TalkingIsntEverything
             return "Talking Isn't Everything";
         }
 
-        static public void ApplySettings()
-        {
-            //Log.Message("ApplySettings - allowAnimals: " + allowAnimals + ", allowRomance: " + allowRomance + ", allowCasual: " + allowCasual + ", allowSlavery: " + allowSlavery);
-            foreach(InteractionSwapDef swap in DefDatabase<InteractionSwapDef>.AllDefsListForReading)
-            {
-                if (swap.setting == "allowAnimals") swap.enabled = allowAnimals;
-                else if (swap.setting == "allowRomance") swap.enabled = allowRomance;
-                else if (swap.setting == "allowCasual") swap.enabled = allowCasual;
-                else if (swap.setting == "allowSlavery") swap.enabled = allowSlavery;
-                //Log.Message(swap + ".enabled: " + swap.enabled);
-            }
-
-            CalculateAffectedInteractions();
-
-            if (allowAnimals)
-            {
-                DefDatabase<WorkGiverDef>.GetNamed("Tame").requiredCapacities.Remove(PawnCapacityDefOf.Talking);
-                DefDatabase<WorkGiverDef>.GetNamed("Train").requiredCapacities.Remove(PawnCapacityDefOf.Talking);
-
-                SetTalkingFactor(StatDefOf.TameAnimalChance, 0f);
-                SetTalkingFactor(StatDefOf.TrainAnimalChance, 0f);
-            }
-            else
-            {
-                DefDatabase<WorkGiverDef>.GetNamed("Tame").requiredCapacities.AddDistinct(PawnCapacityDefOf.Talking);
-                DefDatabase<WorkGiverDef>.GetNamed("Train").requiredCapacities.AddDistinct(PawnCapacityDefOf.Talking);
-
-                SetTalkingFactor(StatDefOf.TameAnimalChance, defaultTameTalkingWeight);
-                SetTalkingFactor(StatDefOf.TrainAnimalChance, defaultTrainTalkingWeight);
-            }
-            //Log.Message("tame required capacities: " + DefDatabase<WorkGiverDef>.GetNamed("Tame").requiredCapacities.ToStringSafeEnumerable());
-
-            if (allowRomance && !allowCasual)
-            {
-                baseEmptySelectionWeight = 1f;
-            }
-            else
-            {
-                baseEmptySelectionWeight = 0f;
-            }
-        }
-
         public override void DoSettingsWindowContents(Rect inRect) => Settings.DoSettingsWindowContents(inRect);
     }
 

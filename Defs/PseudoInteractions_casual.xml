@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+  
+  
+  <InteractionDef>
+    <defName>CYB_Mute_Chitchat_Initiator</defName>
+    <label>chitchat</label>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] [actedon] [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [mutualaction].</li>
+		
+		<li>actedon->paused to check in on</li>
+		<li>actedon->patted the shoulder of</li>
+		<li>actedon->grinned and waved at</li>
+		<li>actedon->[showed] a [noteworthy] [object] to</li>
+		
+		<li>showed->showed</li>
+		<li>showed->pointed out</li>
+		<li>showed->indicated</li>
+		<li>showed->revealed</li>
+		
+		<li>noteworthy->beautiful</li>
+		<li>noteworthy->pretty</li>
+		<li>noteworthy->funny-shaped</li>
+		<li>noteworthy->curious</li>
+		<li>noteworthy->unusual</li>
+		
+		<li>object->rock</li>
+		<li>object->stone</li>
+		<li>object->pebble</li>
+		<li>object->piece of metal</li>
+		<li>object->piece of glass</li>
+		<li>object->piece of wood</li>
+		<li>object->piece of trash</li>
+		<li>object->stick</li>
+		<li>object->plant</li>
+		<li>object->root</li>
+		<li>object->bug</li>
+		<li>object->beetle</li>
+		<li>object->shadow</li>
+		<li>object->animal bone</li>
+		
+		<li>mutualaction->shared a companionable silence</li>
+		<li>mutualaction->goofed around [silly]</li>
+		<li>mutualaction->hugged briefly</li>
+		<li>mutualaction->clasped hands</li>
+		<li>mutualaction->shared a moment of [emotion]</li>
+		<li>mutualaction->laughed together</li>
+		<li>mutualaction->waved to eachother in passing</li>
+		
+		<li>emotion->humor</li>
+		<li>emotion->stillness</li>
+		<li>emotion->companionship</li>
+		<li>emotion->understanding</li>
+		<li>emotion->solemnity</li>
+		<li>emotion->surprise</li>
+		<li>emotion->contemplation</li>
+		<li>emotion->camaraderie</li>
+		
+		<li>silly->throwing things at each other</li>
+		<li>silly->pretending to be [impression]</li>
+		<li>silly->doing impressions of [impression]</li>
+		<li>silly->laughing at eachother's antics</li>
+		<li>silly->play fighting</li>
+		
+		<li>impression->stellar bodies</li>
+		<li>impression->aliens</li>
+		<li>impression->archeotechs</li>
+		<li>impression->ghosts</li>
+		<li>impression->mechanoids</li>
+		<li>impression->insectoids</li>
+		<li>impression->aircraft</li>
+		<li>impression->wild animals</li>
+		<li>impression->farm animals</li>
+		<li>impression->wild people</li>
+		<li>impression->famous people</li>
+		<li>impression->royalty</li>
+		<li>impression->the High Stellarch</li>
+		<li>impression->people they know</li>
+		<li>impression->eachother</li>
+
+      </rulesStrings>
+
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  
+  
+  <InteractionDef>
+    <defName>CYB_Mute_DeepTalk_Initiator</defName>
+    <label>deep talk</label>
+    <symbol>Things/Mote/SpeechSymbols/DeepTalk</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry(p=12)->[INITIATOR_nameDef] [actedon] [RECIPIENT_nameDef].</li>
+		<li>r_logentry(p=3)->[INITIATOR_nameDef] [hugged] [RECIPIENT_nameDef] [adv_hug].</li>
+		<li>r_logentry(p=10)->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [mutualaction].</li>
+		<li>r_logentry(p=10)->[RECIPIENT_nameDef] [attended] as [INITIATOR_nameDef] [displayedemotion].</li>
+		<li>r_logentry(p=1)->[INITIATOR_nameDef] cleaned [RECIPIENT_nameDef]'s [bodypart] for [RECIPIENT_objective].</li>
+		<li>r_logentry(p=2)->[INITIATOR_nameDef] offered [RECIPIENT_nameDef] a shoulder to lean on.</li>
+	  
+		<li>hugged->hugged</li>
+		<li>hugged->embraced</li>
+	  
+		<li>adv_hug->tightly</li>
+		<li>adv_hug->solemnly</li>
+		<li>adv_hug->companionably</li>
+		<li>adv_hug->firmly</li>
+		<li>adv_hug->gently</li>
+		<li>adv_hug->fiercely</li>
+		<li>adv_hug->carefully</li>
+		<li>adv_hug->cheerfully</li>
+		<li>adv_hug->joyfully</li>
+		
+		<li>actedon->offered gestures of companionship and reassurance to</li>
+		<li>actedon->spent quiet time with</li>
+		<li>actedon->expressed genuine emotion to</li>
+		<li>actedon->paused to help and reassure</li>
+		<li>actedon->spent a long moment with</li>
+		<li>actedon->held hands with</li>
+		
+		<li>adj_important_cons->meaningful</li>
+		<li>adj_important_cons->solemn</li>
+		<li>adj_important_cons->bonding</li>
+		<li>adj_important_cons->contemplative</li>
+		<li>adj_important_cons->spiritual</li>
+		<li>adj_important_cons->genuine</li>
+		<li>adj_important_cons->vulnerable</li>
+		<li>adj_important_cons->moving</li>
+		<li>adj_important_cons->personal</li>
+		<li>adj_important_cons->joyful</li>
+		<li>adj_important_cons->celebratory</li>
+		
+		<li>adj_important_vowel->important</li>
+		<li>adj_important_vowel->emotional</li>
+		<li>adj_important_vowel->intimate</li>
+		
+		<li>moment->moment</li>
+		<li>moment->silence</li>
+		<li>moment->experience</li>
+		
+		<li>bodypart->face</li>
+		<li>bodypart->hands</li>
+		<li>bodypart->hair</li>
+		<li>bodypart->fingernails</li>
+		<li>bodypart->feet</li>
+		<li>bodypart->knees</li>
+		
+		<li>bodypart_pl->faces</li>
+		<li>bodypart_pl->hands</li>
+		<li>bodypart_pl->hair</li>
+		<li>bodypart_pl->fingernails</li>
+		<li>bodypart_pl->feet</li>
+		<li>bodypart_pl->knees</li>
+		
+		<li>mutualaction(p=3)->spent [adj_important_vowel] time together</li>
+		<li>mutualaction(p=11)->spent [adj_important_cons] time together</li>
+		<li>mutualaction(p=11)->shared a [adj_important_cons] [moment]</li>
+		<li>mutualaction(p=3)->shared an [adj_important_vowel] [moment]</li>
+		<li>mutualaction(p=6)->helped clean eachother's [bodypart_pl]</li>
+		<li>mutualaction(p=14)->[hugged] [hug_adj]</li>
+		<li>mutualaction(p=14)->performed a shared ritual together</li>
+		
+		<li>worried->worried</li>
+		<li>worried->concerned</li>
+		<li>worried->sympathetic</li>
+		<li>worried->thoughtful</li>
+		
+		<li>worry->worry</li>
+		<li>worry->concern</li>
+		<li>worry->sympathy</li>
+		<li>worry->empathy</li>
+		<li>worry->understanding</li>
+		
+		<li>attended->paid close, [worried] attention</li>
+		<li>attended->expressed [worry]</li>
+		<li>attended->listened and nodded</li>
+		<li>attended->comforted [INITIATOR_nameDef]</li>
+		<li>attended->held [INITIATOR_nameDef]'s hands</li>
+		
+		<li>negativeemotion->worry</li>
+		<li>negativeemotion->upset</li>
+		<li>negativeemotion->anger</li>
+		<li>negativeemotion->frustration</li>
+		<li>negativeemotion->exhaustion</li>
+		<li>negativeemotion->fear</li>
+		<li>negativeemotion->anxiety</li>
+		
+		<li>displayedemotion->expressed [negativeemotion]</li>
+		<li>displayedemotion->became tearful from [negativeemotion]</li>
+		<li>displayedemotion->leaned on [RECIPIENT_nameDef] for support</li>
+		<li>displayedemotion->sought out friendly contact</li>
+	  </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>CYB_Mute_Slight</defName>
+    <label>slight</label>
+    <symbol>Things/Mote/SpeechSymbols/Slight</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+	  
+        <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef].</li>
+
+        <li>insulted->laughed at</li>
+        <li>insulted->sniggered at</li>
+        <li>insulted->sneered at</li>
+        <li>insulted->pointedly ignored</li>
+        <li>insulted->pushed past</li>
+        <li>insulted->made a disrespectful gesture at</li>
+        <li>insulted->made [adj_rude] faces at</li>
+		
+		<li>adj_rude->rude</li>
+		<li>adj_rude->disgusting</li>
+		<li>adj_rude->obscene</li>
+		<li>adj_rude->derisive</li>
+		<li>adj_rude->contemptuous</li>
+		
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>CYB_Mute_Insult</defName>
+    <label>insult</label>
+    <symbol>Things/Mote/SpeechSymbols/Insult</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+	  
+        <li>r_logentry->[INITIATOR_nameDef] [insulted] [RECIPIENT_nameDef].</li>
+
+        <li>insulted->sneered [adv_rude] at</li>
+        <li>insulted->laughed [adv_rude] at</li>
+        <li>insulted->pointed and laughed at</li>
+        <li>insulted->sniggered [adv_rude] at</li>
+        <li>insulted->[adv_rude] spurned</li>
+        <li>insulted->[adv_rude] ignored</li>
+        <li>insulted->shoved</li>
+        <li>insulted->made [adj_rude] faces at</li>
+        <li>insulted->made [adj_rude] gestures at</li>
+		
+		<li>adv_rude->openly</li>
+		<li>adv_rude->derisively</li>
+		<li>adv_rude->savagely</li>
+		<li>adv_rude->deliberately</li>
+		<li>adv_rude->pointedly</li>
+		<li>adv_rude->unkindly</li>
+		<li>adv_rude->contemptuously</li>
+		
+		<li>adj_rude->rude</li>
+		<li>adj_rude->disgusting</li>
+		<li>adj_rude->obscene</li>
+		<li>adj_rude->derisive</li>
+		<li>adj_rude->contemptuous</li>
+		
+      </rulesStrings>
+
+    </logRulesInitiator>
+  </InteractionDef>
+
+  
+</Defs>

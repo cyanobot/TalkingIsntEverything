@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--conversion-->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_ConvertIdeoAttempt</defName>
+	<setting>allowConvert</setting>
+	<role>Initiator</role>
+	<original>ConvertIdeoAttempt</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Convert_Success</defName>
+	<setting>allowConvert</setting>
+	<role>Initiator</role>
+	<original>Convert_Success</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Convert_Failure</defName>
+	<setting>allowConvert</setting>
+	<role>Initiator</role>
+	<original>Convert_Failure</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Conversion</defName>
+	<setting>allowConvert</setting>
+	<role>Initiator</role>
+	<original>Speech_Conversion</original>
+	<replacement>CYB_Mute_Speech_Conversion</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<!--role functions : available to mute anyway, just adding flavour text-->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Reassure</defName>
+	<role>Initiator</role>
+	<original>Reassure</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_WorkDrive</defName>
+	<role>Initiator</role>
+	<original>WorkDrive</original>
+	<replacement>CYB_Mute_WorkDrive</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_PreachHealth</defName>
+	<role>Initiator</role>
+	<original>PreachHealth</original>
+	<replacement>CYB_Mute_PreachHealth</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Counsel_Success</defName>
+	<role>Initiator</role>
+	<original>Counsel_Success</original>
+	<replacement>CYB_Mute_Counsel_Success</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Counsel_Failure</defName>
+	<role>Initiator</role>
+	<original>Counsel_Failure</original>
+	<replacement>CYB_Mute_Counsel_Failure</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+
+<!--role functions : not usually available to mute, unlock with allowRoles -->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Trial_Accuse</defName>
+	<setting>allowRoles</setting>
+	<role>Initiator</role>
+	<original>Trial_Accuse</original>
+	<replacement>CYB_Mute_Trial_Accuse</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Trial_Defend</defName>
+	<role>Initiator</role>
+	<original>Trial_Defend</original>
+	<replacement>CYB_Mute_Trial_Defend</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

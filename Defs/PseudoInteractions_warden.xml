@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+ 
+  <!--recruitment-->
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_BuildRapport</defName>
+    <label>try to get to know</label>
+    <symbol>Things/Mote/SpeechSymbols/BuildRapport</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_activity] [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_mime] [noun_mime] to [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_encourage] [RECIPIENT_nameDef] to [noun_activity].</li>
+		
+		<li>verb_activity->spent some time with</li>
+		<li>verb_activity->sat with</li>
+		
+		<li>verb_mime->pantomimed</li>
+		<li>verb_mime->mimed</li>
+		<li>verb_mime->demonstrated</li>
+		
+		<li>noun_mime->holding hands</li>
+		<li>noun_mime->embracing</li>
+		<li>noun_mime->living together</li>
+		<li>noun_mime->cooperation</li>
+		
+		<li>verb_encourage->encouraged</li>
+		<li>verb_encourage->prompted</li>
+		<li>verb_encourage->coaxed</li>
+		<li>verb_encourage->pushed</li>
+		
+		<li>noun_activity->play a game</li>
+		<li>noun_activity->open up</li>
+		<li>noun_activity->pay attention to [INITIATOR_objective]</li>
+		<li>noun_activity->sit closer to [INITIATOR_objective]</li>
+		<li>noun_activity->meditate with [INITIATOR_objective]</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_RecruitAttempt</defName>
+    <label>recruit attempt</label>
+    <symbolSource>InitiatorFaction</symbolSource>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_pointat] the [noun_exit].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_lead] [RECIPIENT_nameDef] to the [word_exit].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [verb_offer] [RECIPIENT_nameDef] [noun_symbol].</li>
+		
+		<li>verb_offer->offered</li>
+		<li>verb_offer->tried to give</li>
+		
+		<li>noun_symbol->a hug</li>
+		<li>noun_symbol->an embrace</li>
+		<li>noun_symbol->[INITIATOR_possessive] hand</li>
+		
+		<li>verb_lead->lead</li>
+		<li>verb_lead->pulled</li>
+		<li>verb_lead->brought</li>
+		<li>verb_lead->guided</li>
+		
+		<li>verb_pointat->gestured at</li>
+		<li>verb_pointat->pointed at</li>
+		<li>verb_pointat->indicated</li>
+		<li>verb_pointat->presented</li>
+		
+		<li>noun_exit->door</li>
+		<li>noun_exit->exit</li>
+		<li>noun_exit->outside world</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+ 
+  <!--slavery-->
+ 
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_EnslaveAttempt</defName>
+    <label>enslave attempt</label>
+    <symbol>UI/Icons/Slavery</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] forced [RECIPIENT_nameDef] to submit.</li>
+		<li>r_logentry->[INITIATOR_nameDef] presented [RECIPIENT_nameDef] with the tools [RECIPIENT_pronoun] will be using to work.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_ReduceWill</defName>
+    <label>try to reduce will</label>
+    <symbol>Things/Mote/SpeechSymbols/ReduceWill</symbol>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>45</initiatorXpGainAmount>
+    <recipientThought>WillDiminished</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] threatened [RECIPIENT_nameDef] with [threat].</li>
+		<li>r_logentry->[INITIATOR_nameDef] demonstrated [fact].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [violenced] [RECIPIENT_nameDef] to demonstrate [INITIATOR_possessive] power.</li>
+		<li>r_logentry->[INITIATOR_nameDef] mimed [pantomime] [RECIPIENT_nameDef].</li>
+		
+		<li>threat->violence</li>
+		<li>threat->[INITIATOR_possessive] fists</li>
+		<li>threat->a stick</li>
+		<li>threat->a show of force</li>
+		
+		<li>fact->physical dominance over [RECIPIENT_nameDef]</li>
+		<li>fact->the security of the cell</li>
+		<li>fact->[INITIATOR_possessive] power over [RECIPIENT_nameDef]</li>
+		
+		<li>violenced->casually struck</li>
+		<li>violenced->physically manhandled</li>
+		<li>violenced->humiliated</li>
+		
+		<li>pantomime->execution</li>
+		<li>pantomime->violent retribution</li>
+		<li>pantomime->working for the colony</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Suppress</defName>
+    <label>suppress</label>
+    <symbol>UI/Icons/Slavery</symbol>
+    <workerClass>InteractionWorker_Suppress</workerClass>
+    <logRulesInitiator>
+      <rulesStrings>
+	  
+        <li>r_logentry->[INITIATOR_nameDef] threatened [RECIPIENT_nameDef] with [threat].</li>
+        <li>r_logentry->[INITIATOR_nameDef] watched [RECIPIENT_nameDef]'s work carefully.</li>
+        <li>r_logentry->[INITIATOR_nameDef] forced [RECIPIENT_nameDef] to [RECIPIENT_possessive] knees and demanded deference.</li>
+        <li>r_logentry->[INITIATOR_nameDef] exerted physical dominance over [RECIPIENT_nameDef].</li>
+		
+		<li>threat->violence</li>
+		<li>threat->[INITIATOR_possessive] fists</li>
+		<li>threat->a stick</li>
+		<li>threat->a show of force</li>
+		
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

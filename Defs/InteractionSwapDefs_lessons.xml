@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonShooting</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonShooting</original>
+	<replacement>CYB_Mute_LessonShooting</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonMelee</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonMelee</original>
+	<replacement>CYB_Mute_LessonMelee</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonConstruction</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonConstruction</original>
+	<replacement>CYB_Mute_LessonConstruction</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonMining</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonMining</original>
+	<replacement>CYB_Mute_LessonMining</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonCooking</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonCooking</original>
+	<replacement>CYB_Mute_LessonCooking</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonPlants</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonPlants</original>
+	<replacement>CYB_Mute_LessonPlants</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonAnimals</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonAnimals</original>
+	<replacement>CYB_Mute_LessonAnimals</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonCrafting</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonCrafting</original>
+	<replacement>CYB_Mute_LessonCrafting</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonArtistic</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonArtistic</original>
+	<replacement>CYB_Mute_LessonArtistic</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonMedicine</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonMedicine</original>
+	<replacement>CYB_Mute_LessonMedicine</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonSocial</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonSocial</original>
+	<replacement>CYB_Mute_LessonSocial</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_LessonIntellectual</defName>
+	<setting>allowTeach</setting>
+	<role>Initiator</role>
+	<original>LessonIntellectual</original>
+	<replacement>CYB_Mute_LessonIntellectual</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+
+</Defs>

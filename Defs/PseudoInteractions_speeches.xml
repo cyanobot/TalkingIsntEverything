@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->  
+  
+  <RulePackDef>
+    <defName>CYB_MuteSpeechUtility</defName>
+    <rulePack>
+      <rulesStrings>
+          <li>mimed->mimed</li>
+          <li>mimed->pantomimed</li>
+          <li>mimed->acted out</li>
+          <li>mimed->demonstrated</li>
+          <li>mimed->portrayed</li>
+		  
+		  <li>mimeadv->ritualistically</li>
+		  <li>mimeadv->subtly</li>
+		  <li>mimeadv->briefly</li>
+		  <li>mimeadv->dramatically</li>
+		  <li>mimeadv->energetically</li>
+		  <li>mimeadv->carefully</li>
+		  <li>mimeadv->abstractly</li>
+		  
+		  <li>performance->something indecipherable</li>
+		  
+		  <li>gestureadj->sweeping</li>
+		  <li>gestureadj->dramatic</li>
+		  <li>gestureadj->cryptic</li>
+		  <li>gestureadj->sudden</li>
+		  <li>gestureadj->brief</li>
+		  
+		  <li>gestureadj_v->enigmatic</li>
+		  <li>gestureadj_v->ambiguous</li>
+		  <li>gestureadj_v->assertive</li>
+		  <li>gestureadj_v->elaborate</li>
+		  
+		  <li>gesture->gesture</li>
+		  <li>gesture->motion</li>
+		  <li>gesture->gesticulation</li>
+		  
+		  <li>pointed->pointed</li>
+		  <li>pointed->gestured</li>
+		  <li>pointed->gesticulated</li>
+		  <li>pointed->directed attention</li>
+		  
+		  <li>toward->toward</li>
+		  <li>toward->at</li>
+		  <li>toward->to</li>
+		  
+		  <li>target->[INITIATOR_reflexive]</li>
+		  <li>target->the audience</li>
+		  <li>target->the floor</li>
+		  <li>target->a seemingly random direction</li>
+		  
+		  <li>r_logentry->[INITIATOR_nameDef] gesticulated wildly.</li>
+		  <li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
+		  <li>r_logentry->[INITIATOR_nameDef] [mimeadv] [mimed] [performance].</li>
+		  <li>r_logentry->[INITIATOR_nameDef] [mimeadv] communicated [performance] through interpretive dance.</li>
+		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture].</li>		  
+		  <li>r_logentry->[INITIATOR_nameDef] made an [gestureadj_v] [gesture].</li>	
+		  <li>r_logentry->[INITIATOR_nameDef] made a [gestureadj] [gesture] [toward] [target].</li>	
+		  <li>r_logentry->[INITIATOR_nameDef] made an [gestureadj_v] [gesture] [toward] [target].</li>	
+		  <li>r_logentry->[INITIATOR_nameDef] [pointed] [toward] [target].</li>		  
+		  <li>r_logentry->[INITIATOR_nameDef] [pointed] [mimeadv] [toward] [target].</li>  
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Duel</defName>
+    <label>duel speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->violently</li>
+		<li>mimeadv->abruptly</li>
+		<li>mimeadv->decisively</li>
+		<li>mimeadv->solemnly</li>
+		
+		<li>performance->the clash of blades</li>
+		<li>performance->a violent death</li>
+		<li>performance->dying</li>
+		<li>performance->killing</li>
+		<li>performance->being killed</li>
+		<li>performance->victory</li>
+		<li>performance->defeat</li>
+		<li>performance->a traditional salute</li>
+		<li>performance->death in battle</li>
+		<li>performance->a duel</li>
+		<li>performance->duelling</li>
+		<li>performance->cutting a throat</li>
+		<li>performance->falling to the ground</li>
+		<li>performance->bleeding out</li>
+		
+		<li>gestureadj->vicious</li>
+		<li>gestureadj->savage</li>
+		<li>gestureadj->fierce</li>
+		
+		<li>gesture->slashing motion</li>
+		<li>gesture->stabbing motion</li>
+		<li>gesture->bow</li>
+		<li>gesture->salute</li>
+		
+		<li>target->the duellists</li>		
+		<li>target->the duellists' weapons</li>
+		<li>target->the arena</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Funeral</defName>
+    <label>funeral speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->mournfully</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->with finality</li>
+		<li>mimeadv->sadly</li>
+		<li>mimeadv->grimly</li>
+		
+		<li>performance->eternal sleep</li>
+		<li>performance->ending</li>
+		<li>performance->death</li>
+		<li>performance->the journey to the afterlife</li>
+		<li>performance->crossing over</li>
+		<li>performance->weeping</li>
+		<li>performance->grieving</li>
+		<li>performance->lamentation</li>
+		<li>performance->comforting one another</li>
+		<li>performance->celebration</li>
+		
+		<li>gestureadj->slow</li>
+		<li>gestureadj->solemn</li>
+		<li>gestureadj->reverent</li>
+		
+		<li>target->the deceased</li>
+		<li>target->the earth</li>
+		<li>target->the heavens</li>		
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_DateRitual</defName>
+    <label>celebration speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>performance->celebration</li>
+		<li>performance->togetherness</li>
+		<li>performance->coming together</li>
+		<li>performance->the passing of the seasons</li>
+		<li>performance->ritual behaviour</li>
+		<li>performance->community</li>
+		
+		<li>gestureadj->traditional</li>
+		<li>gestureadj->ritually prescribed</li>
+		<li>gestureadj->friendly</li>
+		<li>gestureadj->warm</li>
+		
+		<li>gestureadj_v->inclusive</li>
+		
+		<li>target->the colony</li>
+		<li>target->the group</li>
+		<li>target->the gathering</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>  
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Leader</defName>
+    <label>leader speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->excitedly</li>
+		<li>mimeadv->authoritatively</li>
+		<li>mimeadv->confidently</li>
+		<li>mimeadv->sternly</li>
+		<li>mimeadv->enthusiastically</li>
+		<li>mimeadv->stoically</li>
+		
+		<li>performance->leadership</li>
+		<li>performance->taking the lead</li>
+		<li>performance->courage</li>
+		<li>performance->standing firm in the face of peril</li>
+		<li>performance->societal roles</li>
+		<li>performance->correct behaviour</li>
+		<li>performance->overcoming hardship</li>
+		<li>performance->a great feat of [adjective]</li>
+		<li>performance->togetherness</li>
+		<li>performance->coming together</li>
+		<li>performance->putting on a mantle</li>
+		<li>performance->taking up a burden</li>
+		
+		<li>adjective->courage</li>
+		<li>adjective->endurance</li>
+		<li>adjective->might</li>
+		<li>adjective->intellect</li>
+		
+		<li>gestureadj->brash</li>
+		<li>gestureadj->decisive</li>
+		<li>gestureadj->thoughtful</li>
+		<li>gestureadj->commandeering</li>
+		<li>gestureadj->grandiose</li>
+		
+		<li>gestureadj_v->assertive</li>
+		
+		<li>target->the colony</li>
+		<li>target->the group</li>
+		<li>target->the world at large</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Sacrifice</defName>
+    <label>sacrifice speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->maniacally</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->repeatedly</li>
+		<li>mimeadv->wildly</li>
+		<li>mimeadv->reverently</li>
+		
+		<li>performance->the act of sacrifice</li>
+		<li>performance->slitting a throat</li>
+		<li>performance->cutting out a heart</li>
+		<li>performance->ending a life</li>
+		<li>performance->crossing a threshold</li>
+		<li>performance->an offering</li>
+		<li>performance->subjugation</li>
+		<li>performance->death</li>
+		
+		<li>gestureadj->cruel</li>
+		<li>gestureadj->savage</li>
+		<li>gestureadj->vicious</li>
+		
+		<li>gestureadj_v->abrupt</li>
+		
+		<li>gesture->slash</li>
+		<li>gesture->swipe</li>
+		
+		<li>target->the sacrifice</li>
+		<li>target->the victim</li>
+		<li>target->the sacrificial implement</li>
+		<li>target->the earth</li>
+		<li>target->the heavens</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Scarification</defName>
+    <label>scarification speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->stoically</li>
+		<li>mimeadv->maniacally</li>
+		<li>mimeadv->savagely</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->reverently</li>
+	  
+		<li>performance->the act of branding</li>
+		<li>performance->an incision</li>
+		<li>performance->removal of the skin</li>
+		<li>performance->enduring pain</li>
+		<li>performance->endurance</li>
+		<li>performance->recognising another by their scars</li>
+		<li>performance->personal growth</li>
+		<li>performance->great strength</li>
+		<li>performance->personal sacrifice</li>
+		<li>performance->a great struggle</li>
+		
+		<li>gestureadj->savage</li>
+		<li>gestureadj->vicious</li>
+		<li>gestureadj->sharp</li>
+		<li>gestureadj->traditional</li>
+		
+		<li>gestureadj_v->incisive</li>
+		<li>gestureadj_v->elegant</li>
+		<li>gestureadj_v->abrupt</li>
+		
+		<li>target->the implement of scarification</li>
+		<li>target->the recipient</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Blinding</defName>
+    <label>blinding speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->reverently</li>
+		
+		<li>performance->the technique of blinding</li>
+		<li>performance->seeing into a higher plane</li>
+		<li>performance->being unable to see</li>
+		<li>performance->being in the dark</li>
+		<li>performance->opening the inner eye</li>
+		<li>performance->experiencing a psychic awakening</li>
+		<li>performance->finding one's way by touchs</li>
+		<li>performance->listening closely</li>
+		<li>performance->echolocation</li>
+		<li>performance->donning a blindfold</li>
+		<li>performance->removing a blindfold</li>
+		<li>performance->use of a cane</li>
+		<li>performance->covering the eyes</li>
+		
+		<li>target->the eyes</li>
+		<li>target->[INITIATOR_possessive] eyes</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Execution</defName>
+    <label>exceution speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->grimly</li>
+		<li>mimeadv->savagely</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->sternly</li>
+		<li>mimeadv->disdainfully</li>
+		
+		<li>performance->the scales of justice</li>
+		<li>performance->passing judgement</li>
+		<li>performance->great disappointment</li>
+		<li>performance->condemnation</li>
+		<li>performance->slitting a throat</li>
+		<li>performance->cutting off a head</li>
+		<li>performance->enacting punishment</li>
+		<li>performance->action and consequence</li>
+		<li>performance->the act of killing</li>
+		
+		<li>gestureadj->condemning</li>
+		<li>gestureadj->final</li>
+		<li>gestureadj->sharp</li>
+		<li>gestureadj->solemn</li>
+		
+		<li>gestureadj_v->abrupt</li>
+		
+		<li>target->the condemned</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_TreeConnection</defName>
+    <label>tree connection speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->lovingly</li>
+		<li>mimeadv->reverently</li>
+		<li>mimeadv->slowly</li>
+		
+		<li>performance->the growth of a tree</li>
+		<li>performance->the lifecycle of a dryad</li>
+		<li>performance->the lifecycle of the tree</li>
+		<li>performance->hugging a tree</li>
+		<li>performance->the cycle of the seasons</li>
+		<li>performance->becoming one</li>	
+		<li>performance->becoming connected</li>		  
+		<li>performance->pruning the tree</li>		
+		<li>performance->the act of meditation</li>		
+		<li>performance->a psychic awakening</li>	
+		<li>performance->unfurling like a seedling</li>
+		
+		<li>gestureadj->slow</li>
+		<li>gestureadj->languid</li>
+		<li>gestureadj->reverential</li>
+		<li>gestureadj->humble</li>
+		
+		<li>gestureadj_v->unhurried</li>
+		<li>gestureadj_v->understated</li>
+	  
+		<li>target->nature</li>
+		<li>target->the natural world</li>
+		<li>target->the tree</li>
+		<li>target->the surroundings</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>  
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_AcceptRole</defName>
+    <label>role acceptance speech</label>
+    <symbol>Things/Mote/SpeechSymbols/RoleChange</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->excitedly</li>
+		<li>mimeadv->authoritatively</li>
+		<li>mimeadv->confidently</li>
+		<li>mimeadv->sternly</li>
+		<li>mimeadv->enthusiastically</li>
+		<li>mimeadv->stoically</li>
+	  
+		<li>performance->leading by example</li>
+		<li>performance->speaking with each colonist in turn</li>
+		<li>performance->adjective</li>
+		<li>performance->a great feat of [adjective]</li>
+		<li>performance->togetherness</li>
+		<li>performance->coming together</li>
+		<li>performance->societal roles</li>
+		<li>performance->correct behaviour</li>		
+		<li>performance->taking responsibility</li>
+		<li>performance->thankfulness</li>
+		<li>performance->personal sacrifice</li>
+		<li>performance->putting on a mantle</li>
+		<li>performance->taking up a burden</li>
+		
+		<li>adjective->courage</li>
+		<li>adjective->endurance</li>
+		<li>adjective->might</li>
+		<li>adjective->intellect</li>
+		
+		<li>gestureadj->decisive</li>
+		<li>gestureadj->thoughtful</li>
+		<li>gestureadj->assertive</li>
+		<li>gestureadj->traditional</li>
+		<li>gestureadj->ritually prescribed</li>
+		<li>gestureadj->grandiose</li>
+		
+		<li>target->the colony</li>
+		<li>target->the group</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_RemoveRole</defName>
+    <label>role removal speech</label>
+    <symbol>Things/Mote/SpeechSymbols/RoleChange</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->reluctantly</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->humbly</li>
+		
+		<li>performance->setting aside a mantle</li>
+		<li>performance->setting down a burden</li>
+		<li>performance->stepping aside to make space for others</li>
+		<li>performance->predicting the future</li>
+		<li>performance->passing a torch</li>
+		<li>performance->togetherness</li>
+		<li>performance->rest and recovery</li>
+		
+		<li>gestureadj->solemn</li>
+		<li>gestureadj->sad</li>
+		<li>gestureadj->regretful</li>
+		
+		<li>gestureadj_v->inclusive</li>
+		<li>gestureadj_v->inviting</li>
+		
+		<li>target->the colony</li>
+		<li>target->the group</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+</Defs>

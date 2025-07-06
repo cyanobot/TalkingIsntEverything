@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_WordOfTrust</defName>
+	<role>Initiator</role>
+	<original>WordOfTrust</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_WordOfJoy</defName>
+	<role>Initiator</role>
+	<original>WordOfJoy</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_WordOfLove</defName>
+	<role>Initiator</role>
+	<original>WordOfLove</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_WordOfSerenity</defName>
+	<role>Initiator</role>
+	<original>WordOfSerenity</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_WordOfInspiration</defName>
+	<role>Initiator</role>
+	<original>WordOfInspiration</original>
+	<replacement>CYB_Mute_WordOfInspiration</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

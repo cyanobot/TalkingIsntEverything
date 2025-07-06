@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--slavery-->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_EnslaveAttempt</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>EnslaveAttempt</original>
+	<replacement>CYB_Mute_EnslaveAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_ReduceWill</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>ReduceWill</original>
+	<replacement>CYB_Mute_ReduceWill</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Suppress</defName>
+	<setting>allowSlavery</setting>
+	<role>Initiator</role>
+	<original>Suppress</original>
+	<replacement>CYB_Mute_Suppress</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<!--recruitment-->
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_BuildRapport</defName>
+	<setting>allowRecruit</setting>
+	<role>Initiator</role>
+	<original>BuildRapport</original>
+	<replacement>CYB_Mute_BuildRapport</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_RecruitAttempt</defName>
+	<setting>allowRecruit</setting>
+	<role>Initiator</role>
+	<original>RecruitAttempt</original>
+	<replacement>CYB_Mute_RecruitAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

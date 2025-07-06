@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_AnimalChat</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>AnimalChat</original>
+	<replacement>CYB_Mute_AnimalChat</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_TameAttempt</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>TameAttempt</original>
+	<replacement>CYB_Mute_TameAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_TrainAttempt</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>TrainAttempt</original>
+	<replacement>CYB_Mute_TrainAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_ReleaseToWild</defName>
+	<setting>allowAnimals</setting>
+	<role>Initiator</role>
+	<original>ReleaseToWild</original>
+	<replacement>CYB_Mute_ReleaseToWild</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

@@ -20,7 +20,7 @@ namespace TalkingIsntEverything
             defaultTameTalkingWeight = StatDefOf.TameAnimalChance.capacityFactors?.Find(f => f.capacity == PawnCapacityDefOf.Talking)?.weight ?? 0f;
             defaultTrainTalkingWeight = StatDefOf.TrainAnimalChance.capacityFactors?.Find(f => f.capacity == PawnCapacityDefOf.Talking)?.weight ?? 0f;
 
-            Main.ApplySettings();
+            Settings.ApplySettings();
 
             var harmony = new Harmony("cyanobot.TalkingIsntEverything");
 

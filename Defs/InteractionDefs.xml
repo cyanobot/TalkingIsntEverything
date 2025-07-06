@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<InteractionDef>
+    <defName>CYB_Mute_ConvertPrisoner</defName>
+    <label>convert</label>
+    <workerClass>InteractionWorker</workerClass>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbolSource>InitiatorIdeo</symbolSource>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>demonstrated->demonstrated</li>
+		<li>demonstrated->pantomimed</li>
+		<li>demonstrated->mimed</li>
+		<li>demonstrated->illustrated</li>
+
+		<li>demonstrationadj->correct</li>
+		<li>demonstrationdadj->proper</li>
+		<li>demonstrationadj->traditional</li>
+		
+		<li>demonstration->greetings</li>
+		<li>demonstration->food rituals</li>
+		<li>demonstration->morals</li>
+		<li>demonstration->ethics</li>
+		<li>demonstration->societal roles</li>
+		<li>demonstration->behaviour</li>
+		<li>demonstration->opinions</li>
+		<li>demonstration->recreation</li>
+		<li>demonstration->relationships</li>
+		<li>demonstration->opinions on [topic]</li>
+		<li>demonstration->attitudes</li>
+		<li>demonstration->attitudes toward [topic]</li>
+		
+		<li>topic->animals</li>
+		<li>topic->different kinds of animal</li>
+		<li>topic->gender</li>
+		<li>topic->technology</li>
+		<li>topic->religion</li>
+		<li>topic->plants</li>
+		<li>topic->fungus</li>
+		<li>topic->the indoors</li>
+		<li>topic->the outdoors</li>
+		<li>topic->insectoids</li>
+		<li>topic->wealth</li>
+		<li>topic->the elderly</li>
+		<li>topic->the young</li>
+		<li>topic->ranged weapons</li>
+		<li>topic->melee weapons</li>
+		<li>topic->important people</li>
+		<li>topic->beggars</li>
+		<li>topic->strangers</li>
+			  
+        <li>r_logentry->[INITIATOR_nameDef] [demonstrated] [demonstrationadj] [demonstration].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [demonstrated] [demonstrationadj] [demonstration] to [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+</InteractionDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Royalty">
+	<defName>CYB_Mute_ConvertPrisoner</defName>
+	<setting>allowConvert</setting>
+	<role>Initiator</role>
+	<original>CYB_Mute_ConvertPrisoner</original>
+	<replacement/>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

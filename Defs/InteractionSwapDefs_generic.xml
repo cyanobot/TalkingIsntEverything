@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Chitchat_Recipient</defName>
+	<role>Recipient</role>
+	<original>Chitchat</original>
+	<replacement>CYB_Mute_Chitchat_Recipient</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_DeepTalk_Recipient</defName>
+	<role>Recipient</role>
+	<original>DeepTalk</original>
+	<replacement>CYB_Mute_DeepTalk_Recipient</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Biotech">
+	<defName>CYB_BabyPlay</defName>
+	<role>Initiator</role>
+	<original>BabyPlay</original>
+	<replacement>CYB_Mute_BabyPlay</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+  
+  <InteractionDef>
+    <defName>CYB_Mute_Chitchat_Recipient</defName>
+    <label>chitchat</label>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [subject] to [RECIPIENT_nameDef].</li>
+
+        <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicLight]</li>
+        <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
+
+        <li>talkedabout(p=4)->chatted about</li>
+        <li>talkedabout->shared a word about</li>
+        <li>talkedabout->spoke about</li>
+        <li>talkedabout->gabbed about</li>
+        <li>talkedabout->talked about</li>
+        <li>talkedabout->joked about</li>
+        <li>talkedabout->quipped about</li>
+
+        <li>commentedabout->said something about</li>
+        <li>commentedabout->said a word about</li>
+        <li>commentedabout->made a comment about</li>
+        <li>commentedabout->commented about</li>
+        <li>commentedabout->told a joke about</li>
+
+      </rulesStrings>
+      <include>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">TalkTopicsCube</li>
+      </include>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>CYB_Mute_DeepTalk_Recipient</defName>
+    <label>deep talk</label>
+    <symbol>Things/Mote/SpeechSymbols/DeepTalk</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] to [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] shared a moment of silent understanding.</li>
+
+        <li>talkedabout->communicated thoughts about</li>
+        <li>talkedabout->expressed thoughts about</li>
+        <li>talkedabout->expressed ideas about</li>
+        <li>talkedabout->made a confession about</li>
+        <li>talkedabout->gave a heartfelt monologue about</li>
+        <li>talkedabout->talked quietly about</li>
+        <li>talkedabout->talked deeply about</li>
+
+        <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
+        <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
+      </rulesStrings>
+      <include>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">TalkTopicsCube</li>
+      </include>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <InteractionDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CYB_Mute_BabyPlay</defName>
+    <label>play</label>
+    <symbol>Things/Mote/Childcare/BabyPlay</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] made [RECIPIENT_nameDef] [reaction].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [interaction] [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] played [babyGame] with [RECIPIENT_nameDef].</li>
+
+        <li>reaction->giggle</li>
+        <li>reaction->smile</li>
+        <li>reaction->squirm with joy</li>
+        <li>reaction->laugh</li>
+        <li>reaction->drool playfully</li>
+        <li>reaction->gurgle</li>
+        <li>reaction->squeal</li>
+        <li>reaction->burp</li>
+        <li>reaction->stare in fascination</li>
+
+        <li>interaction->delighted</li>
+        <li>interaction->played with</li>
+        <li>interaction->entertained</li>
+        <li>interaction->amused</li>
+        <li>interaction->tickled</li>
+        <li>interaction->nuzzled</li>
+        <li>interaction->snuffled</li>
+        <li>interaction->hugged</li>
+        <li>interaction->tossed</li>
+        <li>interaction->played a magic trick on</li>
+
+        <li>babyGame->hide-and-go-seek</li>
+        <li>babyGame->peekaboo</li>
+        <li>babyGame->find-the-finger</li>
+        <li>babyGame->monkey-see-monkey-do</li>
+        <li>babyGame->fingerpuppets</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  
+  
+</Defs>

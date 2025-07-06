@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+  
+   
+  <InteractionDef>
+    <defName>CYB_Mute_RomanceAttempt</defName>
+    <label>romance attempt</label>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef] by [wootactic].</li>
+
+        <li>wooed->tried to flirt with</li>
+        <li>wooed->flirted with</li>
+        <li>wooed->tried to attract</li>
+        <li>wooed->tried to romance</li>
+        <li>wooed->tried to woo</li>
+        <li>wooed->wooed</li>
+        <li>wooed->pursued</li>
+        <li>wooed->charmed</li>
+        <li>wooed->courted</li>
+
+		<li>wootactic->[showingoff] [INITIATOR_possessive] own [characteristic_nonverbal]</li>
+		<li>wootactic->[showingoff] [INITIATOR_possessive] own [bodypart_flirty_plural]</li>
+		<li>wootactic->[admiring] [RECIPIENT_possessive] [characteristic_nonverbal]</li>
+		<li>wootactic->[admiring] [RECIPIENT_possessive] [bodypart_flirty_plural]</li>
+		<li>wootactic->laughing jokingly about [RECIPIENT_possessive] [characteristic_nonverbal]</li>
+		<li>wootactic->laughing jokingly about [INITIATOR_possessive] own [characteristic_nonverbal]</li>
+		<li>wootactic->[touching] [RECIPIENT_possessive] [bodypart_flirty]</li>
+		<li>wootactic->[touching] [INITIATOR_possessive] own [bodypart_flirty]</li>
+		<li>wootactic->making a [adj_gesture] gesture</li>
+		<li>wootactic->making a [adj_gesture] expression</li>
+		<li>wootactic->making prolonged [adj_gesture] eye contact</li>
+		
+		<li>admiring->admiring</li>
+		<li>admiring->paying attention to</li>
+		<li>admiring->demonstrating appreciation of</li>
+		<li>admiring->ogling</li>
+		
+		<li>showingoff->showing off</li>
+		<li>showingoff->drawing attention to</li>
+		<li>showingoff->prominently displaying</li>
+				
+		<li>touching->touching</li>
+		<li>touching->[adj_touch] touching</li>
+		<li>touching->attempting to touch</li>
+		<li>touching->grabbing playfully at</li>
+		
+		<li>adj_touch->playfully</li>
+		<li>adj_touch->carefully</li>
+		<li>adj_touch->gently</li>
+		<li>adj_touch->softly</li>
+		<li>adj_touch->reverently</li>
+		<li>adj_touch->irreverently</li>
+		<li>adj_touch->gleefully</li>
+		<li>adj_touch->suggestively</li>
+		
+		<li>adj_gesture->lewd</li>
+		<li>adj_gesture->sincere</li>
+		<li>adj_gesture->flirtatious</li>
+		<li>adj_gesture->suggestive</li>
+
+		<li>bodypart_flirty->hair</li>
+		<li>bodypart_flirty->face</li>
+		<li>bodypart_flirty->knee</li>
+		<li>bodypart_flirty->leg</li>
+		<li>bodypart_flirty->arm</li>
+		<li>bodypart_flirty->butt</li>
+		<li>bodypart_flirty->thigh</li>
+		<li>bodypart_flirty->hand</li>
+		<li>bodypart_flirty->fingers</li>
+		<li>bodypart_flirty->neck</li>
+		<li>bodypart_flirty->ear</li>
+		
+		<li>bodypart_flirty_plural->hair</li>
+		<li>bodypart_flirty_plural->face</li>
+		<li>bodypart_flirty_plural->knees</li>
+		<li>bodypart_flirty_plural->legs</li>
+		<li>bodypart_flirty_plural->arms</li>
+		<li>bodypart_flirty_plural->butt</li>
+		<li>bodypart_flirty_plural->thighs</li>
+		<li>bodypart_flirty_plural->hands</li>
+		<li>bodypart_flirty_plural->fingers</li>
+		<li>bodypart_flirty_plural->neck</li>
+		<li>bodypart_flirty_plural->ears</li>
+
+        <li>characteristic_nonverbal->clothes</li>
+        <li>characteristic_nonverbal->clothing choices</li>
+        <li>characteristic_nonverbal->stylishness</li>
+        <li>characteristic_nonverbal->looks</li>
+        <li>characteristic_nonverbal->appearance</li>
+        <li>characteristic_nonverbal->height</li>
+        <li>characteristic_nonverbal->weight</li>
+        <li>characteristic_nonverbal->hair</li>
+        <li>characteristic_nonverbal->hairstyle</li>
+        <li>characteristic_nonverbal->facial hair</li>
+        <li>characteristic_nonverbal->leg hair</li>
+        <li>characteristic_nonverbal->face</li>
+        <li>characteristic_nonverbal->eyes</li>
+        <li>characteristic_nonverbal->nose</li>
+        <li>characteristic_nonverbal->ears</li>
+        <li>characteristic_nonverbal->jawline</li>
+        <li>characteristic_nonverbal->forehead</li>
+        <li>characteristic_nonverbal->hands</li>
+        <li>characteristic_nonverbal->body</li>
+        <li>characteristic_nonverbal->muscles</li>
+        <li>characteristic_nonverbal->shooting skills</li>
+        <li>characteristic_nonverbal->melee fighting skills</li>
+        <li>characteristic_nonverbal->social skills</li>
+        <li>characteristic_nonverbal->plant growing skills</li>
+        <li>characteristic_nonverbal->medical skill</li>
+        <li>characteristic_nonverbal->animal taming ability</li>
+        <li>characteristic_nonverbal->cooking skill</li>
+        <li>characteristic_nonverbal->construction skill</li>
+        <li>characteristic_nonverbal->mining skill</li>
+        <li>characteristic_nonverbal->artistic skills</li>
+        <li>characteristic_nonverbal->crafting skills</li>
+        <li>characteristic_nonverbal->intellectual skills</li>
+        <li>characteristic_nonverbal->skills</li>
+        <li>characteristic_nonverbal->abilities</li>
+        <li>characteristic_nonverbal->attitude</li>
+        <li>characteristic_nonverbal->way of walking</li>
+        <li>characteristic_nonverbal->fighting methods</li>
+        <li>characteristic_nonverbal->diet</li>
+        <li>characteristic_nonverbal->eating habits</li>
+        <li>characteristic_nonverbal->food preferences</li>
+        <li>characteristic_nonverbal->courageousness</li>
+        <li>characteristic_nonverbal->personal habits</li>
+        <li>characteristic_nonverbal->personal hygiene</li>
+        <li>characteristic_nonverbal->hardiness</li>
+        <li>characteristic_nonverbal->personality</li>
+        <li>characteristic_nonverbal->culture</li>
+        <li>characteristic_nonverbal->punctuality</li>
+        <li>characteristic_nonverbal->generosity</li>
+        <li>characteristic_nonverbal->bravery</li>
+        <li>characteristic_nonverbal->loyalty</li>
+        <li>characteristic_nonverbal->kindness</li>
+        <li>characteristic_nonverbal->charm</li>
+        <li>characteristic_nonverbal->sincerity</li>
+		
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <InteractionDef>
+    <defName>CYB_Mute_MarriageProposal</defName>
+    <label>marriage proposal</label>
+    <symbol>Things/Mote/SpeechSymbols/MarriageProposal</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] proposed marriage to [RECIPIENT_nameDef] by [proposalaction].</li>
+        
+		<li>proposalaction->getting down on one knee</li>
+		<li>proposalaction->offering a traditional symbol of engagement</li>
+		<li>proposalaction->offering a symbolic gift</li>
+		<li>proposalaction->pantomiming a wedding ceremony</li>
+		<li>proposalaction->performing a traditional ritual of proposal</li>
+
+	  </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <InteractionDef>
+    <defName>CYB_Mute_Breakup</defName>
+    <label>breakup</label>
+    <symbol>Things/Mote/SpeechSymbols/Breakup</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [told] [RECIPIENT_nameDef] that their relationship is over.</li>
+		
+		<li>told->made it clear to</li>
+		<li>told->pantomimed to</li>
+		<li>told->communicated to</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+</Defs>

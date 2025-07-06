@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+  
+  <!--conversion-->
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Speech_Conversion</defName>
+    <label>conversion speech</label>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>CYB_MuteSpeechUtility</li></include>
+      <rulesStrings>
+		<li>mimeadv->formally</li>
+		<li>mimeadv->solemnly</li>
+		<li>mimeadv->authoritatively</li>
+		<li>mimeadv->confidently</li>
+		<li>mimeadv->sternly</li>
+		
+		<li>performance->togetherness</li>
+		<li>performance->ritual behaviour</li>
+		<li>performance->community</li>
+		<li>performance->taking up a burden</li>
+		<li>performance->personal growth</li>
+		<li>performance->societal roles</li>
+		<li>performance->correct behaviour</li>
+		<li>performance->self discovery</li>
+		<li>performance->penitence</li>
+		<li>performance->the community's traditions</li>
+		<li>performance->a traditional practice</li>
+		
+		<li>gestureadj->traditional</li>
+		<li>gestureadj->grandiose</li>
+		<li>gestureadj->ritual</li>
+		<li>gestureadj->formal</li>
+		
+		<li>gestureadj_v->entreating</li>
+		<li>gestureadj_v->inviting</li>
+		<li>gestureadj_v->assertive</li>
+	  
+		<li>target->the subject</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  
+  <!--role functions-->
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Counsel_Success</defName>
+    <label>successful counsel</label>
+    <symbol>UI/Abilities/Counsel</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>helped->reassured</li>
+		<li>helped->calmed</li>
+		<li>helped->soothed</li>
+		<li>helped->consoled</li>
+		<li>helped->encouraged</li>
+		
+		<li>method->with an embrace</li>
+		<li>method->with a hand on [RECIPIENT_possessive] shoulder</li>
+		<li>method->with a moment of [INITIATOR_possessive] time</li>
+		<li>method->by spending some time with [RECIPIENT_objective]</li>
+		<li>method->by clapping [RECIPIENT_objective] on the back</li>
+		<li>method->with a gesture of camaraderie</li>
+		<li>method->with quiet empathy</li>
+	  
+		<li>r_logentry->[INITIATOR_nameDef] [helped] [RECIPIENT_nameDef] [method].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Counsel_Failure</defName>
+    <label>failed counsel</label>
+    <symbol>UI/Abilities/Counsel</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>help->reassure</li>
+		<li>help->calm</li>
+		<li>help->soothe</li>
+		<li>help->console</li>
+		<li>help->encourage</li>
+	  
+		<li>r_logentry->[INITIATOR_nameDef] tried to [help] [RECIPIENT_nameDef], but botched the attempt and made things worse.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+    
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_PreachHealth</defName>
+    <label>preached health</label>
+    <symbol>UI/Abilities/PreachHealth</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>method->performing a small ritual over [RECIPIENT_objective]</li>
+		<li>method->leading [RECIPIENT_objective] in meditation</li>
+		<li>method->gracing [RECIPIENT_nameDef] with [INITIATOR_possessive] blessing</li>
+		<li>method->giving [RECIPIENT_objective] a small icon of health</li>
+	  
+		<li>r_logentry->[INITIATOR_nameDef] strengthened [RECIPIENT_nameDef]'s health by [method].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_WorkDrive</defName>
+    <label>work drive</label>
+    <symbol>UI/Abilities/WorkDrive</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>encouraged->encouraged</li>
+		<li>encouraged->directed</li>
+	  
+		<li>r_logentry->[INITIATOR_nameDef] [encouraged] [RECIPIENT_nameDef] to work extra hard for the good of the colony.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Trial_Accuse</defName>
+    <label>accuse</label>
+    <symbol>UI/Icons/Rituals/Trial</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>mimed->mimed</li>
+		<li>mimed->pantomimed</li>
+		<li>mimed->acted out</li>
+		
+		<li>performance->righteous anger</li>
+		<li>performance->indignation</li>
+		<li>performance->sorrow</li>
+		<li>performance->disappointment</li>
+		<li>performance->a reenactment of the crime</li>
+		<li>performance->a suitable punishment</li>
+		<li>performance->[INITIATOR_possessive] opinion of [RECIPIENT_nameDef]</li>
+		<li>performance->shaming [RECIPIENT_nameDef]</li>
+		<li>performance->casting [RECIPIENT_nameDef] out</li>
+		<li>performance->shunning [RECIPIENT_nameDef]</li>
+		
+		<li>thoughtadj->carefully</li>
+		<li>thoughtadj->critically</li>
+		<li>thoughtadj->silently</li>
+		
+		<li>thoughtabout->thought about</li>
+		<li>thoughtabout->contemplated</li>
+		<li>thoughtabout->mused upon</li>
+		<li>thoughtabout->analysed</li>
+		<li>thoughtabout->assessed</li>
+		
+		<li>thoughttopic->the evidence</li>
+		<li>thoughttopic->the crime</li>
+		<li>thoughttopic->[RECIPIENT_nameDef]'s actions</li>
+		<li>thoughttopic->the accusations</li>
+		
+		<li>gestured->gestured</li>
+		<li>gestured->gesticulated</li>
+		<li>gestured->motioned</li>
+		<li>gestured->pointed</li>
+		
+		<li>gestureadv->accusingly</li>
+		<li>gestureadv->angrily</li>
+		<li>gestureadv->disdainfully</li>
+		<li>gestureadv->sadly</li>
+		<li>gestureadv->brusquely</li>
+		
+		<li>r_logentry->[INITIATOR_nameDef] [thoughtadj] [thoughtabout] [thoughttopic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [thoughtabout] [thoughttopic].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [gestured] [gestureadv] toward [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] presented some evidence.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_Trial_Defend</defName>
+    <label>defend</label>
+    <symbol>UI/Icons/Rituals/TrialDefend</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>mimed->mimed</li>
+		<li>mimed->pantomimed</li>
+		<li>mimed->acted out</li>
+		
+		<li>performance->indignation</li>
+		<li>performance->absolute denial</li>
+		<li>performance->rejecting the accusations</li>
+		<li>performance->repentence</li>
+		<li>performance->regret</li>
+		<li>performance->shock and indignation</li>
+		<li>performance->making reparations</li>
+		
+		<li>stallaction->trying to storm out</li>
+		<li>stallaction->refusing to engage</li>
+		<li>stallaction->having a tantrum</li>
+		<li>stallaction->launching into an elaborate and indecipherable pantomime</li>
+		
+		<li>pleadaction->fell to [RECIPIENT_possessive] knees</li>
+		<li>pleadaction->wrung [RECIPIENT_possessive] hands</li>
+		<li>pleadaction->appealed to the jury</li>
+		<li>pleadaction->gesticulated</li>
+		
+		<li>pleadadv->in pleading</li>
+		<li>pleadadv->pleadingly</li>
+		<li>pleadadv->plaintively</li>
+		<li>pleadadv->unhappily</li>
+		<li>pleadadv->with reluctance</li>
+	    
+		<li>r_logentry->[INITIATOR_nameDef] [mimed] [performance].</li>
+		<li>r_logentry->[INITIATOR_nameDef] stalled the proceedings.</li>
+		<li>r_logentry->[INITIATOR_nameDef] stalled by [stallaction].</li>
+		<li>r_logentry->[INITIATOR_nameDef] [pleadaction] [pleadadv].</li>
+		<li>r_logentry->[INITIATOR_nameDef] presented alternative evidence.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+</Defs>

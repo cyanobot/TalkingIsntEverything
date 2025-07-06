@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Hidden defs that should never be used on their own 
+  they contain the adjusted rulesStrings for mute pawns
+  and are loaded programmatically-->
+  
+  <InteractionDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>CYB_Mute_WordOfInspiration</defName>
+    <label>word of inspiration</label>
+    <symbol>Things/Mote/SpeechSymbols/WordOfInspiration</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+		<li>r_logentry->[INITIATOR_nameDef] used psychic suggestion to inspire [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+    
+</Defs>

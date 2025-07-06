@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Chitchat_Initiator</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Chitchat</original>
+	<replacement>CYB_Mute_Chitchat_Initiator</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_DeepTalk_Initiator</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>DeepTalk</original>
+	<replacement>CYB_Mute_DeepTalk_Initiator</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Slight</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Slight</original>
+	<replacement>CYB_Mute_Slight</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Insult</defName>
+	<setting>allowCasual</setting>
+	<role>Initiator</role>
+	<original>Insult</original>
+	<replacement>CYB_Mute_Insult</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_RomanceAttempt</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>RomanceAttempt</original>
+	<replacement>CYB_Mute_RomanceAttempt</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_MarriageProposal</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>MarriageProposal</original>
+	<replacement>CYB_Mute_MarriageProposal</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef>
+	<defName>CYB_Breakup</defName>
+	<setting>allowRomance</setting>
+	<role>Initiator</role>
+	<original>Breakup</original>
+	<replacement>CYB_Mute_Breakup</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>

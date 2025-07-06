@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Ideology-->
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Duel</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Duel</original>
+	<replacement>CYB_Mute_Speech_Duel</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Funeral</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Funeral</original>
+	<replacement>CYB_Mute_Speech_Funeral</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_DateRitual</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_DateRitual</original>
+	<replacement>CYB_Mute_Speech_DateRitual</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Leader</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Leader</original>
+	<replacement>CYB_Mute_Speech_Leader</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Sacrifice</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Sacrifice</original>
+	<replacement>CYB_Mute_Speech_Sacrifice</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Scarification</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Scarification</original>
+	<replacement>CYB_Mute_Speech_Scarification</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Blinding</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Blinding</original>
+	<replacement>CYB_Mute_Speech_Blinding</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_Execution</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_Execution</original>
+	<replacement>CYB_Mute_Speech_Execution</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_TreeConnection</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_TreeConnection</original>
+	<replacement>CYB_Mute_Speech_TreeConnection</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_AcceptRole</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_AcceptRole</original>
+	<replacement>CYB_Mute_Speech_AcceptRole</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+<TalkingIsntEverything.InteractionSwapDef MayRequire="Ludeon.RimWorld.Ideology">
+	<defName>CYB_Speech_RemoveRole</defName>
+	<setting>allowSpeech</setting>
+	<role>Initiator</role>
+	<original>Speech_RemoveRole</original>
+	<replacement>CYB_Mute_Speech_RemoveRole</replacement>
+</TalkingIsntEverything.InteractionSwapDef>
+
+</Defs>
