@@ -110,6 +110,7 @@ namespace TalkingIsntEverything
                 else if (swap.setting == "allowRecruit") swap.enabled = allowRecruit;
                 else if (swap.setting == "allowConvert") swap.enabled = allowConvert;
                 else if (swap.setting == "allowTrial") swap.enabled = allowTrial;
+                else if (swap.setting == "allowSpeech") swap.enabled = allowSpeech;
                 else if (swap.setting == "allowTeach") swap.enabled = allowTeach;
 
                 //Log.Message(swap + ".enabled: " + swap.enabled);
