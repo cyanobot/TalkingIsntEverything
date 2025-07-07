@@ -2,3 +2,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverythin
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Debug\TalkingIsntEverything.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Debug\TalkingIsntEverything.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\Source\TalkingIsntEverything\obj\Debug\TalkingIsntEverything.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TalkingIsntEverything\1.6\Assemblies\TalkingIsntEverything.dll

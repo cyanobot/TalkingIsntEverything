@@ -5,6 +5,7 @@ using static TalkingIsntEverything.Util;
 
 namespace TalkingIsntEverything
 {
+#if RW_1_5
     [HarmonyPatch(typeof(FloatMenuMakerMap),"ScannerShouldSkip")]
     public static class ScannerShouldSkip_Patch
     {
@@ -23,5 +24,5 @@ namespace TalkingIsntEverything
             }
         }
     }
-
+#endif
 }

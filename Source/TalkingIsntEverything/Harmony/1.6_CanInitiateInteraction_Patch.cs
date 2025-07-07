@@ -5,13 +5,24 @@ using Verse;
 using RimWorld;
 using static TalkingIsntEverything.Util;
 using static TalkingIsntEverything.Settings;
+using System.Reflection;
 
 namespace TalkingIsntEverything
 {
+#if RW_1_6
     //allow mute pawns to initiate interactions that have an initiator swap defined
-    [HarmonyPatch(typeof(InteractionUtility), nameof(InteractionUtility.CanInitiateInteraction))]
+    [HarmonyPatch(typeof(SocialInteractionUtility), nameof(SocialInteractionUtility.CanInitiateInteraction))]
     public static class CanInitiateInteraction_Patch
     {
+        /*
+        public static void Prepare(MethodBase original)
+        {
+            Log.Message($"New_CanInitiateInteraction_Patch - original: {original}" +
+                $", SocialInteractionUtility type: {typeof(SocialInteractionUtility)}" +
+                $", CanInitiateInteraction: {typeof(SocialInteractionUtility).GetMethod(nameof(SocialInteractionUtility.CanInitiateInteraction))}");
+        }
+        */
+
         public static bool Prefix(ref bool __result, Pawn pawn, InteractionDef interactionDef)
         {
             //if (interactionDef == InteractionDefOf.ReduceWill || interactionDef == InteractionDefOf.EnslaveAttempt)
@@ -60,5 +71,5 @@ namespace TalkingIsntEverything
         }
         */
     }
-
+#endif
 }
