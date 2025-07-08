@@ -3,11 +3,18 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TalkingIsntEverything||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\harmony\\canteachnow_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:harmony\\canteachnow_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\talkingisnteverything\\source\\talkingisnteverything\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\talkingisnteverything\\source\\talkingisnteverything\\harmony\\workgiver_warden_enslave_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\harmony\\workgiver_warden_enslave_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:harmony\\workgiver_warden_enslave_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\harmony\\commsconsole_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:harmony\\commsconsole_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\harmony\\canteachnow_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:harmony\\canteachnow_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\interactionworker_empty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,11 +74,11 @@
       "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TalkingIsntEverything||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\intdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|solutionrelative:intdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CFE1DF6-CF84-43A8-8153-57D602D46A34}|TalkingIsntEverything.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\talkingisnteverything\\source\\talkingisnteverything\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,24 +88,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 240,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorkGiver_Warden_Enslave_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
-              "RelativeDocumentMoniker": "Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
-              "RelativeToolTip": "Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:20:34.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WorkGiver_Warden_Chat_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Chat_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\WorkGiver_Warden_Chat_Patch.cs",
@@ -114,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TameUtility_ShowDesignationWarnings_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\TameUtility_ShowDesignationWarnings_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\TameUtility_ShowDesignationWarnings_Patch.cs",
@@ -126,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RomanceEligible_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\RomanceEligible_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\RomanceEligible_Patch.cs",
@@ -138,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Settings.cs",
               "RelativeDocumentMoniker": "Settings.cs",
@@ -151,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "WorkGiver_Warden_Convert_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Convert_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\WorkGiver_Warden_Convert_Patch.cs",
@@ -163,7 +153,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "CanTeachNow_Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\CanTeachNow_Patch.cs",
+              "RelativeDocumentMoniker": "Harmony\\CanTeachNow_Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\CanTeachNow_Patch.cs",
+              "RelativeToolTip": "Harmony\\CanTeachNow_Patch.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:20:19.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TalkingIsntEverything",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\TalkingIsntEverything.csproj",
+              "RelativeDocumentMoniker": "TalkingIsntEverything.csproj",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\TalkingIsntEverything.csproj",
+              "RelativeToolTip": "TalkingIsntEverything.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-07T09:41:53.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkGiver_Warden_Enslave_Patch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
+              "RelativeDocumentMoniker": "Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
+              "RelativeToolTip": "Harmony\\WorkGiver_Warden_Enslave_Patch.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:20:34.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "JobDriver_ConvertPrisoner_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\JobDriver_ConvertPrisoner_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\JobDriver_ConvertPrisoner_Patch.cs",
@@ -175,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CommsConsole_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\CommsConsole_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\CommsConsole_Patch.cs",
@@ -187,19 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CanTeachNow_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\CanTeachNow_Patch.cs",
-              "RelativeDocumentMoniker": "Harmony\\CanTeachNow_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\CanTeachNow_Patch.cs",
-              "RelativeToolTip": "Harmony\\CanTeachNow_Patch.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAnwHEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:20:19.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "1.6_CanInitiateInteraction_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\1.6_CanInitiateInteraction_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\1.6_CanInitiateInteraction_Patch.cs",
@@ -211,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "1.5_ScannerShouldSkip_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\1.5_ScannerShouldSkip_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\1.5_ScannerShouldSkip_Patch.cs",
@@ -223,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "1.5_CanInitiateInteraction_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Harmony\\1.5_CanInitiateInteraction_Patch.cs",
               "RelativeDocumentMoniker": "Harmony\\1.5_CanInitiateInteraction_Patch.cs",
@@ -235,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Util.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Util.cs",
               "RelativeDocumentMoniker": "Util.cs",
@@ -247,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "InteractionWorker_Empty.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\InteractionWorker_Empty.cs",
               "RelativeDocumentMoniker": "InteractionWorker_Empty.cs",
@@ -259,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "InteractionRole.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\InteractionRole.cs",
               "RelativeDocumentMoniker": "InteractionRole.cs",
@@ -271,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "InteractionSwapDef.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\InteractionSwapDef.cs",
               "RelativeDocumentMoniker": "InteractionSwapDef.cs",
@@ -284,17 +299,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "TalkingIsntEverything",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\TalkingIsntEverything.csproj",
-              "RelativeDocumentMoniker": "TalkingIsntEverything.csproj",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\TalkingIsntEverything.csproj",
-              "RelativeToolTip": "TalkingIsntEverything.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-07T09:41:53.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "Init.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TalkingIsntEverything\\Source\\TalkingIsntEverything\\Init.cs",
               "RelativeDocumentMoniker": "Init.cs",

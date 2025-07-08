@@ -24,8 +24,8 @@ namespace TalkingIsntEverything
         //second parameter is the capacity parameter taken by CapableOf
         public static bool CanTeach(PawnCapacitiesHandler handler, PawnCapacityDef capacity)
         {
-            Log.Message($"CanTeachNow - pawn: {f_Pawn.GetValue(handler)}, capacity: {capacity}" +
-                $", allowTeach: {allowTeach}");
+            //Log.Message($"CanTeachNow - pawn: {f_Pawn.GetValue(handler)}, capacity: {capacity}" +
+            //    $", allowTeach: {allowTeach}");
             return allowTeach || handler.CapableOf(capacity);
         }
 
